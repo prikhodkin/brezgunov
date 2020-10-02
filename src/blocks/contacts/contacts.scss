@@ -21,6 +21,14 @@
 }
 
 @media (min-width: 768px) {
+  .contacts__socials {
+    &--header {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
   .contacts__tel {
     font-size: 26px;
     line-height: 35px;
@@ -32,7 +40,7 @@
   .contacts__email {
     position: absolute;
     bottom: -200px;
-    left: -90px;
+    left: -112px;
     display: flex;
     align-items: center;
     background: linear-gradient(141.63deg, #ffd44d 22.52%, #ff844d 95.16%);
@@ -46,12 +54,6 @@
       height: 1px;
       margin-right: 20px;
       background-color: #ffd44d;
-    }
-  }
-
-  .contacts__socials {
-    &--header {
-      display: block;
     }
   }
 }

@@ -13,12 +13,12 @@
   @include list-reset;
   display: flex;
   align-items: center;
-  margin-left: 9px;
+  margin-left: 22px;
 }
 
 .socials__item {
   &:not(:first-child) {
-    margin-left: 6px;
+    margin-left: 10px;
   }
 }
 
@@ -26,9 +26,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  min-width: 30px;
-  height: 30px;
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
   border-radius: 50%;
 
   &--viber {
@@ -45,7 +45,30 @@
 }
 
 .socials__icon {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .socials__link {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+  }
+
+  .socials__list {
+    margin-left: 9px;
+  }
+
+  .socials__item {
+    &:not(:first-child) {
+      margin-left: 6px;
+    }
+  }
+
+  .socials__icon {
+    width: 12px;
+    height: 12px;
+  }
 }
