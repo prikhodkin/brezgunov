@@ -1,0 +1,51 @@
+.socials__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.socials__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.socials__list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  margin-left: 9px;
+}
+
+.socials__item {
+  &:not(:first-child) {
+    margin-left: 6px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  &--viber {
+    background-color: #8130c1;
+  }
+
+  &--telegram {
+    background-color: #0088cc;
+  }
+
+  &--whatsapp {
+    background-color: #16be55;
+  }
+}
+
+.socials__icon {
+  width: 12px;
+  height: 12px;
+  fill: #ffffff;
+}

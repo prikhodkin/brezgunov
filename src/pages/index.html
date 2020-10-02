@@ -4,30 +4,94 @@
   <meta charset="UTF-8">
   <title>Gulp v4.1</title>
   @@include('../blocks/favicon/favicon.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" crossorigin="">
   <script src="js/vendor.js"></script>
   <script src="js/general.js" defer></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div data-controller="test">
-  <input data-target="test.name" type="text">
-  <button data-action="click->test#greet">Greet</button>
-</div>
-  <div class="tabs" data-tabs>
-    <ul class="tabs__list">
-      <li class="tabs__item tabs__item--active" data-tab="1">Tab # 1</li>
-      <li class="tabs__item"  data-tab="2">Tab # 2</li>
-      <li class="tabs__item" data-tab="3">Tab # 3</li>
-    </ul>
-    <div class="tabs__content tabs__content--active" data-content="1">
-      <p>Lorem ipsum.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+<body class="page">
+  <header class="header">
+    <div class="header__box">
+      <div class="header__inner">
+        <button class="burger header__toggle">
+          <span class="burger__button">Открыть меню</span>
+        </button>
+        <p class="header__text">Меню</p>
+      </div>
+      <nav class="header__nav header__nav--closed navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <ul class="navigation__sublist">
+              <li class="navigation__subitem navigation__subitem--top">
+                <a class="navigation__link navigation__link--top" href="#">Преимущества</a>
+              </li>
+              <li class="navigation__subitem navigation__subitem--top">
+                <a class="navigation__link navigation__link--top" href="#">Сертификаты</a>
+              </li>
+              <li class="navigation__subitem navigation__subitem--top">
+                <a class="navigation__link navigation__link--top" href="#">Кейсы</a>
+              </li>
+              <li class="navigation__subitem navigation__subitem--top">
+                <a class="navigation__link navigation__link--top" href="#">Стоимость</a>
+              </li>
+              <li class="navigation__subitem navigation__subitem--top">
+                <a class="navigation__link navigation__link--top" href="#">Отзывы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navigation__item">
+            <ul class="navigation__sublist navigation__sublist--bottom">
+              <li class="navigation__subitem navigation__subitem--bottom">
+                <a class="navigation__link navigation__link--bottom" href="#">Получить аудит</a>
+              </li>
+              <li class="navigation__subitem navigation__subitem--bottom">
+                <a class="navigation__link navigation__link--bottom" href="#">Бесплатное ведение </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="navigation__close close">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close__icon" width="12" height="12">
+            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+          </svg>
+        </button>
+      </nav>
     </div>
-    <div class="tabs__content" data-content="2">
-      <p>Lorem ipsum. Lorem ipsum dolor.</p>
-      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor.</p>
+    <div class="header__contacts contacts">
+      <a class="contacts__tel" href="tel:+79056960800" >+7 (905) <b>696-08-00</b></a>
+      <a class="contacts__email" href="mailto:kirill@brezgunov.pro">kirill@brezgunov.pro</a>
+      <div class="contacts__socials contacts__socials--header socials">
+        <div class="socials__wrap">
+          <p class="socials__text">Написать мне в:</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--viber" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="tabs__content" data-content="3">3</div>
-  </div>
+  </header>
 </body>
 </html>
