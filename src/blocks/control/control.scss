@@ -1,0 +1,37 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 58px;
+  height: 58px;
+  background: linear-gradient(141.63deg, #ffd44d 22.52%, #ff844d 95.16%);
+  border: none;
+  border-radius: 50%;
+
+  &--next {
+    margin-left: 23px;
+  }
+}
+
+.control__text {
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #1e89e3;
+}
+
+.control__icon {
+  width: 7px;
+  height: 19px;
+  fill: #ffffff;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}

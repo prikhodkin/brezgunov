@@ -26,6 +26,15 @@
     background-image: url("../../img/advantages__border.svg");
     transform: rotate(180deg);
   }
+
+  &--examples::before,
+  &--examples::after {
+    background-image: url("../../img/Arrow-blue.svg");
+  }
+
+  &--examples {
+    padding: 17px 13px;
+  }
 }
 
 .border-wrap__text {
@@ -54,12 +63,22 @@
     height: 38px;
     background-image: url("../../img/customers__money-back.svg");
   }
+
+  &--examples::before {
+    min-width: 45px;
+    height: 45px;
+    background-image: url("../../img/money.svg");
+  }
 }
 
 @media (min-width: 1200px) {
   .border-wrap {
     &--customers {
       padding-left: 33px;
+    }
+
+    &--examples {
+      padding: 17px 27px;
     }
   }
 }
