@@ -1,0 +1,147 @@
+.send {
+  padding-top: 62px;
+  padding-bottom: 75px;
+}
+
+.send__box {
+  margin-bottom: 40px;
+}
+
+.send__title {
+  margin-bottom: 67px;
+  padding-right: 17px;
+  padding-left: 18px;
+
+  & span {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 190%;
+  }
+}
+
+.send__text {
+  margin-bottom: 60px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 24px;
+
+  & b {
+    font-weight: 700;
+  }
+}
+
+.send__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 68px;
+  padding-left: 56px;
+}
+
+.send__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.send__tel {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background: linear-gradient(141.63deg, #ffd44d 22.52%, #ff844d 95.16%);
+  background-clip: text;
+  border: none;
+  -webkit-text-fill-color: transparent;
+}
+
+.send__checkbox {
+  max-width: 190px;
+}
+
+.send__image {
+  width: 343px;
+  height: 345px;
+  margin: 0 auto;
+  background-image: url("../../img/send__img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (min-width: 1200px) {
+  .send {
+    display: flex;
+    padding-top: 75px;
+    padding-right: calc(50% - 620px);
+    padding-bottom: 108px;
+    padding-left: calc(50% - 500px);
+  }
+
+  .send__title {
+    margin-bottom: 47px;
+    padding: 0;
+    font-size: 54px;
+    line-height: 63px;
+
+    & span {
+      font-size: 24px;
+    }
+  }
+
+  .send__text {
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 70px;
+    padding: 0;
+    padding-left: 34px;
+    font-size: 18px;
+    line-height: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 0;
+      min-width: 20px;
+      height: 1px;
+      background-color: $main-font;
+    }
+  }
+
+  .send__form {
+    align-items: inherit;
+    padding: 0;
+  }
+
+  .send__tel {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .send__button {
+    margin: 0;
+    margin-left: 56px;
+  }
+
+  .send__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+
+  .send__checkbox {
+    max-width: inherit;
+  }
+
+  .send__image {
+    min-width: 604px;
+    height: 604px;
+    background-position: 0 -12px;
+  }
+}

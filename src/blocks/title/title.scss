@@ -1,0 +1,18 @@
+.title {
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 33px;
+  font-family: $second-font, sans-serif;
+  text-transform: uppercase;
+
+  &--white {
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}

@@ -1,0 +1,36 @@
+.contact-me {
+  display: flex;
+  align-items: flex-end;
+  max-width: 221px;
+}
+
+.contact-me__text {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  font-size: 20px;
+  line-height: 27px;
+
+  &::after {
+    @include pseudo;
+    width: 20px;
+    height: 8px;
+    margin-top: 10px;
+    background-image: url("../../img/Arrow.svg");
+  }
+}
+
+.contact-me__button {
+  min-width: 113px;
+  height: 113px;
+  margin-left: 15px;
+  padding: 42px 32px 23px 33px;
+  background-image: url("../../img/phone__background.svg");
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+
+  &:hover {
+    background-image: url("../../img/phone__background-hover.svg");
+  }
+}
+

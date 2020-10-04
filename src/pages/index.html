@@ -4,30 +4,369 @@
   <meta charset="UTF-8">
   <title>Gulp v4.1</title>
   @@include('../blocks/favicon/favicon.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" crossorigin="">
   <script src="js/vendor.js"></script>
   <script src="js/general.js" defer></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div data-controller="test">
-  <input data-target="test.name" type="text">
-  <button data-action="click->test#greet">Greet</button>
-</div>
-  <div class="tabs" data-tabs>
-    <ul class="tabs__list">
-      <li class="tabs__item tabs__item--active" data-tab="1">Tab # 1</li>
-      <li class="tabs__item"  data-tab="2">Tab # 2</li>
-      <li class="tabs__item" data-tab="3">Tab # 3</li>
-    </ul>
-    <div class="tabs__content tabs__content--active" data-content="1">
-      <p>Lorem ipsum.</p>
-      <p>Lorem ipsum dolor sit amet.</p>
+<body class="page">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__box">
+        <div class="header__inner">
+          <button class="burger header__toggle">
+            <span class="burger__button">Открыть меню</span>
+          </button>
+          <p class="header__text">Меню</p>
+        </div>
+        <nav class="header__nav header__nav--closed navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <ul class="navigation__sublist">
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#">Преимущества</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#">Сертификаты</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#">Кейсы</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#">Стоимость</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#">Отзывы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <ul class="navigation__sublist navigation__sublist--bottom">
+                <li class="navigation__subitem navigation__subitem--bottom">
+                  <a class="navigation__link navigation__link--bottom" href="#">Получить аудит</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--bottom">
+                  <a class="navigation__link navigation__link--bottom" href="#">Бесплатное ведение </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="navigation__close close">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="close__icon" width="12" height="12">
+              <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <div class="header__contacts contacts">
+        <a class="contacts__tel" href="tel:+79056960800" >+7 (905) <b>696-08-00</b></a>
+        <a class="contacts__email" href="mailto:kirill@brezgunov.pro">kirill@brezgunov.pro</a>
+        <div class="contacts__socials contacts__socials--header socials">
+          <div class="socials__wrap">
+            <p class="socials__text">Написать мне в:</p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--viber" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--telegram" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--whatsapp" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="tabs__content" data-content="2">
-      <p>Lorem ipsum. Lorem ipsum dolor.</p>
-      <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor.</p>
-    </div>
-    <div class="tabs__content" data-content="3">3</div>
-  </div>
+
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Кирилл Брезгунов, контекстная реклама</h1>
+    <section class="promo">
+      <div class="promo__container">
+        <div class="promo__wrap promo__wrap--top">
+          <h2 class="promo__title title"><span>Надёжный специалист</span>  по <br> контекстной рекламе </h2>
+          <p class="promo__text">Общайтесь напрямую с исполнителем и <b>оперативно повышайте прибыль</b>  своего бизнеса</p>
+          <div class="promo__button contact-me">
+            <p class="contact-me__text">Связаться со мной</p>
+            <a class="contact-me__button" href="#">
+              <svg class="contact-me__icon" width="48" height="48">
+                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="promo__wrap promo__wrap--bottom">
+          <div class="promo__image">
+            <img class="promo__img" src="../img/photo-Kirill.png" alt="Фотография Кирилла Брезгунова">
+          </div>
+          <div class="promo__box">
+            <p class="promo__name">Кирилл Брезгунов</p>
+            <p class="promo__desc">Специалист по настройке контекстной рекламы</p>
+          </div>
+        </div>
+        <div class="promo__socials socials">
+          <div class="socials__wrap">
+            <p class="socials__text">Написать мне в:</p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--viber" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--telegram" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--whatsapp" href="#">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <ul class="advantages__items">
+        <li class="advantages__element advantages__element--1"><p><b>Сэкономлю</b><br> ваш бюджет</p> </li>
+        <li class="advantages__element advantages__element--2"><p><b>Оптимизирую</b> рекламную кампанию</p> </li>
+        <li class="advantages__element advantages__element--3"><p>Снижу <b>стоимость обращения</b> клиента</p> </li>
+        <li class="advantages__element advantages__element--4"><p><b>Повышу количество</b> заявок и звонков</p> </li>
+      </ul>
+      <div class="advantages__wrap">
+        <div class="advantages__box">
+          <h2 class="advantages__title title">Почему со мной удобно работать</h2>
+          <div class="advantages__wrapper border-wrap">
+            <p class="border-wrap__text border-wrap__text--advantages"><span><b>Лично</b> отвечаю за качество своих услуг</span> </p>
+          </div>
+        </div>
+        <ul class="advantages__list">
+          <li class="advantages__item advantages__item--1">
+            <div class="advantages__inner ">
+              <p class="advantages__number">01</p>
+              <p class="advantages__name">Заключаю договор</p>
+            </div>
+            <p class="advantages__desc">Я официально зарегистрирован как самозанятый. Заключу с вами договор, в котором прописаны все сроки и условия, а также предоставлю весь набор необходимой документации</p>
+          </li>
+          <li class="advantages__item advantages__item--2">
+            <div class="advantages__inner">
+              <p class="advantages__number">02</p>
+              <p class="advantages__name">Всегда на связи</p>
+            </div>
+            <p class="advantages__desc">Постоянно онлайн в соц. сетях и <br> мессенджерах, до меня легко достучаться, непрерывно держу вас в курсе состояния рекламной кампании</p>
+          </li>
+          <li class="advantages__item advantages__item--3">
+            <div class="advantages__inner">
+              <p class="advantages__number">03</p>
+              <p class="advantages__name">Подготавливаю отчётность</p>
+            </div>
+            <p class="advantages__desc">Каждый понедельник высылаю вам отчет по рекламе, составляю глобальный отчет 1 раз в месяц и по вашему запросу</p>
+          </li>
+          <li class="advantages__item advantages__item--4">
+            <div class="advantages__inner">
+              <p class="advantages__number">04</p>
+              <p class="advantages__name">Максимально <br> прозрачен в работе</p>
+            </div>
+            <p class="advantages__desc">Вы получаете доступ во все рекламные кабинеты и можете следить за процессом. Разрабатываю план и стратегию на месяц, согласовывая с вами</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="send">
+      <div class="send__box">
+        <h2 class="send__title title">Недовольны своим  подрядчиком <span>по контекстной рекламе?</span> </h2>
+        <p class="send__text"><b>Проведу подробный аудит по его работе</b> и предоставлю список всех ошибок и предложений по улучшению рекламы</p>
+        <form class="send__form">
+          <div class="send__inner">
+            <input class="send__tel" type="tel" name="tel" id="form-tel" placeholder="+7 (___) ___-__-__">
+            <div class="send__button contact-me">
+              <p class="contact-me__text">Связаться со мной</p>
+              <label class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+                <input class="visually-hidden" type="submit">
+              </label>
+            </div>
+          </div>
+          <div class="send__checkbox personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check">
+            <label class="personal-data__label" for="personal-data__check"><p>Соглашаюсь с <span>политикой конфиденциальности</span> </p> </label>
+          </div>
+        </form>
+      </div>
+      <div class="send__image"></div>
+    </section>
+
+    <section class="customers">
+      <div class="customers__box">
+        <div class="customers__inner">
+          <div class="customers__title title">Как я привожу клиентов в ваш бизнес</div>
+          <p class="customers__desc">Порядок работ во время нашего сотрудничества</p>
+        </div>
+        <div class="customers__wrapper border-wrap border-wrap--customers">
+          <p class="border-wrap__text border-wrap__text--customers"><span>Окупаемость рекламных кампаний <b>всегда ясна</b> </span> </p>
+        </div>
+      </div>
+      <ul class="customers__list">
+        <li class="customers__item customers__item--active">
+          <p class="customers__number">01</p>
+          <p class="customers__text"><b>Подробно</b>  анализирую нишу ваших услуг</p>
+        </li>
+        <li class="customers__item">
+          <p class="customers__number">02</p>
+          <p class="customers__text">Подбираю <b>подходящие</b>  инструменты для работы <br> именно с вашей рекламной кампанией</p>
+        </li>
+        <li class="customers__item">
+          <p class="customers__number">03</p>
+          <p class="customers__text">Согласовываю с вами список ключевых слов <br> и объявления <b>для каждого из них</b> </p>
+        </li>
+        <li class="customers__item">
+          <p class="customers__number">04</p>
+          <p class="customers__text">Подготавливаю рекламную кампанию и запускаю в работу</p>
+        </li>
+        <li class="customers__item">
+          <p class="customers__number">05</p>
+          <p class="customers__text">Анализирую результаты <b>каждый день</b> </p>
+        </li>
+        <li class="customers__item">
+          <p class="customers__number">06</p>
+          <p class="customers__text">Улучшаю рекламную кампанию и<b> повышаю вашу прибыль</b></p>
+        </li>
+        <li class="customers__item">
+          <p class="customers__number">07</p>
+          <p class="customers__text">В конце месяца составляю отчёт о распределении <br> бюджета и <b>достигнутых показателях</b> </p>
+        </li>
+      </ul>
+      <ul class="customers__list-bottom">
+        <li class="customers__item-bottom customers__item-bottom--1">Даю рекомендации по дальнейшей стратегии</li>
+        <li class="customers__item-bottom customers__item-bottom--2">Согласовываем план на следующий месяц</li>
+      </ul>
+    </section>
+
+    <section class="certificates">
+      <div class="certificates__box">
+        <div class="certificates__inner">
+          <h2 class="certificates__title title">Сертифицированный специалист по рекламе в Яндекс и Google</h2>
+          <p class="certificates__desc">Посмотрите на официальное подтверждение моих навыков</p>
+        </div>
+        <div class="certificates__wrap certificates__item--top certificate">
+          <div class="certificate__box">
+            <img class="certificate__img" src="../img/certificate__google.png" alt="Сертификат Google">
+          </div>
+          <p class="certificate__text">Сертификация Google Рекламы по проведению поисковых кампаний Google</p>
+        </div>
+      </div>
+      <ul class="certificates__list">
+        <li class="certificates__item certificate">
+          <div class="certificate__box">
+            <img class="certificate__img" src="../img/certificate__google-analytics.png" alt="Сертификат Google analytics" class="certificate__img">
+          </div>
+          <p class="certificate__text">Google Analytics Individual <br> Qualification Google</p>
+        </li>
+        <li class="certificates__item certificate">
+          <div class="certificate__box">
+            <img class="certificate__img" src="../img/certificate__yandex.png" alt="Сертификат yandex" class="certificate__img">
+          </div>
+          <p class="certificate__text">Сертификат Яндекс Директ <br> с прокторингом</p>
+        </li>
+        <li class="certificates__item certificate">
+          <div class="certificate__box">
+            <img class="certificate__img" src="../img/certificate__yandex-metrica.png" alt="Сертификат yandex metrica" class="certificate__img">
+          </div>
+          <p class="certificate__text">Сертификат Яндекс Метрика</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="examples">
+      <div class="examples__box">
+        <div class="examples__inner">
+          <h2 class="examples__title title">Примеры выполненных мною работ</h2>
+          <p class="examples__desc">Несколько самых прибыльных кейсов</p>
+        </div>
+        <div class="examples__wrapper border-wrap border-wrap--examples">
+          <p class="border-wrap__text border-wrap__text--examples"><span><b>Сэкономлю до 50%</b>  от бюджета на рекламу </span> </p>
+        </div>
+      </div>
+      <div class="examples__slider">
+        <div class="examples__wrap">
+          <div class="examples__tasks">
+            <div class="examples__container">
+              <p class="examples__number">01</p>
+              <p class="examples__subtitle"><span>«</span>Технология уюта и комфорта <span>»</span></p>
+            </div>
+            <p class="examples__description">Производство пластиковых окон, натяжных потолков, жалюзи</p>
+            <ul class="examples__list">
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-top">Задачи по проекту:</p>
+                <p class="examples__text">Увеличение количества клиентов</p>
+              </li>
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-bottom">Было сделано:</p>
+                <p class="examples__text">Настроена контекстная реклама</p>
+              </li>
+            </ul>
+          </div>
+          <div class="examples__result">
+            <p class="examples__name">Фактический результат в цифрах:</p>
+            <p class="examples__text examples__text--result"> <b>201</b>  заявка в месяц</p>
+            <p class="examples__text examples__text--result"> <b>218.88 руб.</b>  стоимость привлечения заявки</p>
+          </div>
+          <div class="examples__image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="../img/examples__photo-desktop.webp">
+              <source media="(min-width: 1200px)" srcset="../img/examples__photo-desktop.jpg">
+              <source type="image/webp" srcset="../img/examples__photo.webp">
+              <img class="examples__img" src="../img/examples__photo.jpg" alt="" >
+            </picture>
+
+          </div>
+        </div>
+        <div class="examples__control control">
+          <button class="control__btn control__btn--back">
+            <span class="visually-hidden">Назад</span>
+            <svg class="control__icon">
+              <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+            </svg>
+          </button>
+          <p class="control__text">Листайте, чтобы увидеть ещё больше примеров</p>
+          <button class="control__btn control__btn--next">
+            <span class="visually-hidden">Вперед</span>
+            <svg class="control__icon control__icon--next">
+              <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
+

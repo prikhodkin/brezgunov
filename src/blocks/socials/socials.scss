@@ -1,0 +1,74 @@
+.socials__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.socials__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.socials__list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+}
+
+.socials__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+  border-radius: 50%;
+
+  &--viber {
+    background-color: #8130c1;
+  }
+
+  &--telegram {
+    background-color: #0088cc;
+  }
+
+  &--whatsapp {
+    background-color: #16be55;
+  }
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .socials__link {
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+  }
+
+  .socials__list {
+    margin-left: 9px;
+  }
+
+  .socials__item {
+    &:not(:first-child) {
+      margin-left: 6px;
+    }
+  }
+
+  .socials__icon {
+    width: 12px;
+    height: 12px;
+  }
+}
