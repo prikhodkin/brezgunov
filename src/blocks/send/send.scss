@@ -1,10 +1,40 @@
 .send {
+  position: relative;
   padding-top: 62px;
   padding-bottom: 75px;
+
+  &--bottom {
+    padding-top: 75px;
+    padding-bottom: 98px;
+  }
+
+  &--bottom::before {
+    @include pseudo;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-image: url("../../img/send__top-mobile.svg");
+  }
+
+  &--bottom::after {
+    @include pseudo;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background-image: url("../../img/send__bottom-mobile-bottom.svg");
+  }
 }
 
 .send__box {
   margin-bottom: 40px;
+
+  &--bottom {
+    margin-bottom: 0;
+  }
 }
 
 .send__title {
@@ -61,16 +91,18 @@
 
 .send__checkbox {
   max-width: 190px;
+
+  &--bottom {
+    display: none;
+  }
 }
 
 .send__image {
   width: 343px;
   height: 345px;
   margin: 0 auto;
-  background-image: url("../../img/send__img.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
+
 
 @media (min-width: 1200px) {
   .send {
@@ -79,9 +111,38 @@
     padding-right: calc(50% - 620px);
     padding-bottom: 108px;
     padding-left: calc(50% - 500px);
+
+    &--bottom {
+      padding-top: 166px;
+      padding-bottom: 180px;
+      padding-left: calc(50% - 529px);
+    }
+
+    &--bottom::before {
+      height: 35px;
+      background-image: url("../../img/send__top-desktop.svg");
+    }
+
+    &--bottom::after {
+      @include pseudo;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 32px;
+      background-image: url("../../img/send__bottom-desktop-bottom.svg");
+    }
+  }
+
+  .send__box {
+    &--bottom {
+      width: 613px;
+    }
   }
 
   .send__title {
+    position: relative;
+    z-index: 100;
     margin-bottom: 47px;
     padding: 0;
     font-size: 54px;
@@ -89,6 +150,19 @@
 
     & span {
       font-size: 24px;
+    }
+
+    &--bottom {
+      margin-bottom: 40px;
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    &--bottom b {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 190%;
+      font-family: $first-font;
     }
   }
 
@@ -100,6 +174,11 @@
     padding-left: 34px;
     font-size: 18px;
     line-height: 24px;
+
+    &--bottom {
+      max-width: 447px;
+      margin-bottom: 60px;
+    }
 
     &::before {
       content: "";
@@ -129,6 +208,7 @@
   }
 
   .send__inner {
+    z-index: 100;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -137,11 +217,29 @@
 
   .send__checkbox {
     max-width: inherit;
+
+    &--bottom {
+      display: block;
+    }
   }
 
   .send__image {
     min-width: 604px;
     height: 604px;
-    background-position: 0 -12px;
+
+    &--bottom {
+      position: absolute;
+      top: 14%;
+      right: 350px;
+      width: 652px;
+    }
+  }
+
+  .send__img {
+    object-position: 0 -13px;
+
+    &--bottom {
+      object-position: 0;
+    }
   }
 }

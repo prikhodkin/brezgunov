@@ -234,7 +234,14 @@
           </div>
         </form>
       </div>
-      <div class="send__image"></div>
+      <div class="send__image">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="../img/send__top-desktop.webp">
+          <source media="(min-width: 1200px)" srcset="../img/send__top-desktop.png">
+          <source type="image/webp" srcset="../img/send__top-mobile.webp">
+          <img class="send__img" src="../img/send__top-mobile.png" alt="">
+        </picture>
+      </div>
     </section>
 
     <section class="customers">
@@ -521,9 +528,82 @@
           <p>Смотреть скан отзыва</p>
         </a>
       </div>
+    </section>
 
+    <section class="send send--bottom">
+      <div class="send__box send__box--bottom">
+        <h2 class="send__title send__title--bottom  title">Бесплатное ведение контекстной рекламы <span>при бюджете от <b>500 000 </b>₽ /мес</span> </h2>
+        <p class="send__text send__text--bottom">Оставьте свой номер телефона, и <b>в ближайшее время я свяжусь с вами</b>  для обсуждения деталей работы</p>
+        <form class="send__form">
+          <div class="send__inner">
+            <input class="send__tel" type="tel" name="tel" id="form-tel" placeholder="+7 (___) ___-__-__">
+            <div class="send__button contact-me contact-me--bottom">
+              <p class="contact-me__text contact-me__text--bottom">Оформить бесплатное ведение</p>
+              <label class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+                <input class="visually-hidden" type="submit">
+              </label>
+            </div>
+          </div>
+          <div class="send__checkbox personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-bottom">
+            <label class="personal-data__label" for="personal-data__check-bottom">
+              <p>Соглашаюсь с <span>политикой конфиденциальности</span> </p>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="send__image send__image--bottom">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="../img/send__bottom-desktop.webp">
+          <source media="(min-width: 1200px)" srcset="../img/send__bottom-desktop.png">
+          <source type="image/webp" srcset="../img/send__bottom-mobile.webp">
+          <img class="send__img send__img--bottom" src="../img/send__bottom-mobile.png" alt="">
+        </picture>
+      </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="footer__box">
+      <p class="footer__name">Кирилл Брезгунов</p>
+      <p class="footer__desc">Специалист по настройке контекстной рекламы</p>
+    </div>
+    <div class="header__contacts contacts">
+      <a class="contacts__tel" href="tel:+79056960800">+7 (905) <b>696-08-00</b></a>
+      <a class="contacts__email" href="mailto:kirill@brezgunov.pro">kirill@brezgunov.pro</a>
+      <div class="contacts__socials contacts__socials--header socials">
+        <div class="socials__wrap">
+          <p class="socials__text">Написать мне в:</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--viber" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a class="footer__copyright" href="#">Политика кофиденциальности</a>
+  </footer>
 </body>
 
 </html>
