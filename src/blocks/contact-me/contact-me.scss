@@ -6,10 +6,19 @@
 
 .contact-me__text {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   padding-bottom: 10px;
   font-size: 20px;
   line-height: 27px;
+
+  & b {
+    font-weight: 700;
+  }
+
+  &--price {
+    padding-bottom: 0;
+  }
 
   &::after {
     @include pseudo;
@@ -31,6 +40,26 @@
 
   &:hover {
     background-image: url("../../img/phone__background-hover.svg");
+  }
+
+  &--price {
+    margin-left: auto;
+  }
+
+  &--dark {
+    background-image: url("../../img/phone__background-dark.svg");
+  }
+
+  &--dark:hover {
+    background-image: url("../../img/phone__background-dark-hover.svg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-me__text {
+    &--price br {
+      display: none;
+    }
   }
 }
 
