@@ -6,12 +6,12 @@ import Tabs from "%modules%/tabs/tabs"
 import {$, $$} from "./util";
 
 
-Turbolinks.start();
+// Turbolinks.start();
 
 const application = Application.start()
 const context = require.context("./controllers", true, /\.js$/);
 application.load(definitionsFromContext(context));
 
-
-const tabs = $(`[data-tabs]`);
-new Tabs(tabs);
+//
+// const tabs = $(`[data-tabs]`);
+// new Tabs(tabs);
