@@ -1,0 +1,143 @@
+.appreciation {
+  position: relative;
+  padding: 60px 20px;
+  padding-top: 70px;
+  color: #ffffff;
+  background-color: #2295ff;
+}
+
+.appreciation__title {
+  margin-bottom: 4px;
+}
+
+.appreciation__desc {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 190%;
+  font-family: $second-font;
+  text-transform: uppercase;
+}
+
+.appreciation__box {
+  margin-bottom: 134px;
+  padding: 60px 20px;
+  padding-top: 75px;
+  padding-left: 23px;
+  background-color: #0e5b74;
+}
+
+.appreciation__name {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  font-family: $second-font;
+  text-transform: uppercase;
+
+  & b {
+    font-weight: 900;
+  }
+
+  & span {
+    font-size: 30px;
+    line-height: 40px;
+    font-family: $first-font;
+  }
+}
+
+.appreciation__text {
+  font-size: 20px;
+  line-height: 170%;
+}
+
+.appreciation__link {
+  position: absolute;
+  bottom: 179px;
+  display: flex;
+  align-items: center;
+  padding: 51px 33px 31px 34px;
+  background-color: #ffb94d;
+
+  & p {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+.appreciation__icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 14px;
+  fill: #ffffff;
+}
+
+.appreciation__control {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.appreciation__image {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .appreciation {
+    display: flex;
+    padding-top: 56px;
+    padding-right: calc(50% - 555px);
+    padding-bottom: 114px;
+    padding-left: calc(50% - 638px);
+  }
+
+  .appreciation__title {
+    margin-left: 75px;
+  }
+
+  .appreciation__desc {
+    margin-bottom: 40px;
+    margin-left: 75px;
+    font-size: 24px;
+    line-height: 190%;
+    text-align: left;
+  }
+
+  .appreciation__box {
+    margin-bottom: 39px;
+    padding: 112px 98px 92px 72px;
+  }
+
+  .appreciation__text br {
+    display: none;
+  }
+
+  .appreciation__link {
+    position: relative;
+    bottom: 0;
+    z-index: 1000;
+    justify-content: center;
+    margin-top: -36px;
+    padding-bottom: 34px;
+  }
+
+  .appreciation__wrapper {
+    order: -1;
+  }
+
+  .appreciation__control {
+    max-width: 365px;
+    margin: 0 auto;
+  }
+
+  .appreciation__image {
+    display: block;
+    padding: 66px 64px 31px 45px;
+    background-color: #ffffff;
+  }
+
+  .appreciation__img {
+    width: 353px;
+    min-width: 353px;
+  }
+}

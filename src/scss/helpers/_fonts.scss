@@ -11,6 +11,10 @@
 }
 
 @font-face {
+  @include includeFont(400, $second-font, "Raleway-Regular");
+}
+
+@font-face {
   @include includeFont(700, $second-font, "Raleway-Bold");
 }
 
