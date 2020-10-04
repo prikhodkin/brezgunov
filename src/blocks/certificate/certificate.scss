@@ -1,0 +1,19 @@
+.certificate__box {
+  margin-bottom: 7px;
+  padding: 30px 12px;
+  background: linear-gradient(168.63deg, #ffda67 48.57%, #ff7638 80.22%);
+}
+
+.certificate__text {
+  max-width: 277px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (min-width: 1200px) {
+  .certificate__box {
+    width: 339px;
+    margin-bottom: 0;
+  }
+}
