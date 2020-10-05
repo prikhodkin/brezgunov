@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gulp v4.1</title>
+  @@include('../blocks/favicon/favicon.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" crossorigin="">
+  <script src="js/vendor.js"></script>
+  <script src="js/general.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page">
+  <section class="modal">
+    <div class="modal__container modal__container--letter">
+      <div class="modal__wrapper modal__wrapper--letter">
+        <img class="modal__img" src="../img/appreciation__inventra.png" alt="" >
+      </div>
+      <button class="modal__close close">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="close__icon" width="12" height="12">
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+</body>
+
+</html>
