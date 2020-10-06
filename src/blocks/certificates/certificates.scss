@@ -16,10 +16,11 @@
 }
 
 .certificates__box {
-  margin-bottom: 59px;
+  margin-bottom: 73px;
 }
 
 .certificates__inner {
+  margin-bottom: 76px;
   padding-right: 30px;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .certificates__desc {
-  margin-bottom: 60px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -42,7 +43,7 @@
 
 .certificates__item {
   &:not(:last-child) {
-    margin-bottom: 58px;
+    margin-bottom: 74px;
   }
 }
 
