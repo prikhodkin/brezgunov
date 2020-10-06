@@ -62,13 +62,15 @@
       width: 100%;
       height: 128px;
       background-image: url("../../img/price__bottom-desktop.svg");
+      background-position: top;
+      background-size: cover;
     }
   }
 
   .price__box {
     display: flex;
     align-items: center;
-    margin-bottom: 48px;
+    margin-bottom: 68px;
   }
 
   .price__title {

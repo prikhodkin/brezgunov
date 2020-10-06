@@ -123,11 +123,13 @@
     &::after {
       @include pseudo;
       position: absolute;
-      bottom: -1px;
+      bottom: 95px;
       left: 0;
       width: 100%;
       height: 80px;
       background-image: url("../../img/promo__bottom-desktop.svg");
+      background-position: top;
+      background-size: cover;
     }
   }
 
@@ -139,26 +141,39 @@
   .promo__wrap {
     &--top {
       position: absolute;
-      top: 110px;
+      top: 159px;
       right: 68px;
       z-index: 100;
       width: 576px;
       max-width: 576px;
-      min-height: 410px;
+      min-height: 358px;
       margin-bottom: 0;
-      padding-top: 120px;
+      padding-top: 70px;
       padding-left: 68px;
     }
 
     &--top::before {
       @include pseudo;
       position: absolute;
+      top: -51px;
       right: 0;
-      bottom: 0;
       left: 0;
       width: 100%;
-      height: 117px;
-      background-image: url("../../img/promo__arrow-background.svg");
+      height: 52px;
+      background-image: url("../../img/promo__wrap--top-top.svg");
+      background-position: 0 0;
+    }
+
+    &--top::after {
+      @include pseudo;
+      position: absolute;
+      right: 0;
+      bottom: -164px;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 165px;
+      background-image: url("../../img/promo__wrap--top-bottom.svg");
       background-position: 0 0;
     }
 
@@ -180,6 +195,16 @@
       margin-bottom: 5px;
       font-size: 24px;
       line-height: 28px;
+    }
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: -164px;
+      left: 0;
+      min-width: 576px;
+      height: 165px;
+      background-image: url("../../img/promo__arrow-background.svg");
     }
 
     & > br {
@@ -233,10 +258,31 @@
   }
 
   .promo__box {
-    bottom: 65px;
+    position: relative;
+    bottom: 182px;
     left: -25px;
     width: 214px;
-    padding: 27px 22px 34px 25px;
+    padding: 20px 22px 14px 25px;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      min-width: 100%;
+      height: 21px;
+      background-image: url("../../img/promo__box-bottom.svg");
+    }
+
+    &::after {
+      @include pseudo;
+      position: absolute;
+      top: -7px;
+      left: 0;
+      min-width: 100%;
+      height: 8px;
+      background-image: url("../../img/promo__box-top.svg");
+    }
   }
 
   .promo__name {
