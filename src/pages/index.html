@@ -117,7 +117,12 @@
         </div>
         <div class="promo__wrap promo__wrap--bottom">
           <div class="promo__image">
-            <img class="promo__img" src="../img/photo-Kirill.png" alt="Фотография Кирилла Брезгунова">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="../img/photo-Kirill@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="../img/photo-Kirill@desktop.png">
+              <source type="image/webp" srcset="../img/photo-Kirill@mobile.webp">
+              <img class="promo__img" src="../img/photo-Kirill@mobile.png" alt="Фотография Кирилла Брезгунова">
+            </picture>
           </div>
           <div class="promo__box">
             <p class="promo__name">Кирилл Брезгунов</p>
@@ -298,7 +303,12 @@
         </div>
         <div class="certificates__wrap certificate">
           <div class="certificate__box">
-            <img class="certificate__img" src="../img/certificate__google.png" alt="Сертификат Google">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="../img/certificate__google@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="../img/certificate__google@desktop.png">
+              <source type="image/webp" srcset="../img/certificate__google@mobile.webp">
+              <img class="certificate__img" src="../img/certificate__google@mobile.png" alt="Сертификат Google">
+            </picture>
           </div>
           <p class="certificate__text">Сертификация Google Рекламы по проведению поисковых кампаний Google</p>
         </div>
@@ -306,19 +316,35 @@
       <ul class="certificates__list">
         <li class="certificates__item certificate">
           <div class="certificate__box">
-            <img class="certificate__img" src="../img/certificate__google-analytics.png" alt="Сертификат Google analytics">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="../img/certificate__google-analytics@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="../img/certificate__google-analytics@desktop.png">
+              <source type="image/webp" srcset="../img/certificate__google-analytics@mobile.webp">
+              <img class="certificate__img" src="../img/certificate__google-analytics@mobile.png" alt="Сертификат Google analytics">
+            </picture>
+
           </div>
           <p class="certificate__text">Google Analytics Individual <br> Qualification Google</p>
         </li>
         <li class="certificates__item certificate">
           <div class="certificate__box">
-            <img class="certificate__img" src="../img/certificate__yandex.png" alt="Сертификат yandex">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="../img/certificate__yandex@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="../img/certificate__yandex@desktop.png">
+              <source type="image/webp" srcset="../img/certificate__yandex@mobile.webp">
+              <img class="certificate__img" src="../img/certificate__yandex@mobile.png" alt="Сертификат Google">
+            </picture>
           </div>
           <p class="certificate__text">Сертификат Яндекс Директ <br> с прокторингом</p>
         </li>
         <li class="certificates__item certificate">
           <div class="certificate__box">
-            <img class="certificate__img" src="../img/certificate__yandex-metrica.png" alt="Сертификат yandex metrica">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="../img/certificate__yandex-metrica@desktop.webp">
+              <source media="(min-width: 1200px)" srcset="../img/certificate__yandex-metrica@desktop.png">
+              <source type="image/webp" srcset="../img/certificate__yandex-metrica@mobile.webp">
+              <img class="certificate__img" src="../img/certificate__yandex-metrica@mobile.png" alt="Сертификат Google">
+            </picture>
           </div>
           <p class="certificate__text">Сертификат Яндекс Метрика</p>
         </li>
