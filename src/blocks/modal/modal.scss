@@ -4,6 +4,15 @@
   align-items: center;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  display: none;
+  &.opened {
+    display: flex;
+  }
 }
 
 .modal__container {
@@ -64,7 +73,7 @@
   .modal__container {
     max-width: 743px;
     min-height: 334px;
-    padding: 88px 144px 79px 90px;
+    padding: 88px 125px 79px 90px;
 
     &--accepted-audit {
       padding-right: 82px;
