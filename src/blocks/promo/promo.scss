@@ -54,21 +54,8 @@
   }
 
   &--bottom {
-    margin-bottom: 115px;
+    margin-bottom: 92px;
     line-height: 0;
-  }
-
-  &--bottom::before {
-    @include pseudo;
-    position: absolute;
-    top: 76px;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    width: 320px;
-    height: 312px;
-    background-image: url("../../img/photo-Kirill__background@mobile.svg");
-    background-position: 0 0;
   }
 }
 
@@ -114,7 +101,7 @@
 
 .promo__box {
   position: absolute;
-  bottom: -78px;
+  bottom: -54px;
   width: 100%;
   padding: 0 40px;
   padding-top: 20px;
@@ -260,7 +247,7 @@
       left: 0;
       min-width: 576px;
       height: 165px;
-      background-image: url("../../img/promo__arrow-background.svg");
+      background-image: url("../../img/promo__arrow-background-desktop.svg");
     }
 
     & > br {
@@ -295,19 +282,6 @@
     margin: 0;
   }
 
-  .promo__image {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 170px;
-      left: 135px;
-      z-index: -1;
-      width: 593px;
-      height: 461px;
-      background-image: linear-gradient(141.63deg, #ffd44d 22.52%, #ff844d 95.16%);
-    }
-  }
-
   .promo__button {
     right: 15px;
     bottom: -187px;
@@ -323,21 +297,21 @@
     &::before {
       @include pseudo;
       position: absolute;
-      bottom: -20px;
+      top: -7px;
       left: 0;
-      min-width: 100%;
-      height: 21px;
-      background-image: url("../../img/promo__box-bottom.svg");
+      width: 214px;
+      height: 8px;
+      background-image: url("../../img/promo__box-top@desktop.svg");
     }
 
     &::after {
       @include pseudo;
       position: absolute;
-      top: -7px;
+      bottom: -20px;
       left: 0;
-      min-width: 100%;
-      height: 8px;
-      background-image: url("../../img/promo__box-top.svg");
+      width: 214px;
+      height: 21px;
+      background-image: url("../../img/promo__box-bottom@desktop.svg");
     }
   }
 

@@ -304,12 +304,35 @@
 
   .examples__result {
     position: absolute;
-    bottom: -38px;
+    bottom: -28px;
     left: 565px;
     width: 404px;
-    padding: 50px 35px;
-    background-color: inherit;
-    background-image: url("../../img/examples__result-bc.svg");
+    padding: 40px 35px;
+    padding-top: 32px;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      top: -22px;
+      left: 0;
+      width: 100%;
+      height: 23px;
+      background-image: url("../../img/examples__result-top@desktop.svg");
+      background-position: top;
+      background-size: cover;
+    }
+
+    &::after {
+      @include pseudo;
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background-image: url("../../img/examples__result-bottom@desktop.svg");
+      background-position: top;
+      background-size: cover;
+    }
   }
 
   .examples__control {
