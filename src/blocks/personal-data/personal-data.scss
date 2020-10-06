@@ -38,6 +38,6 @@
   }
 }
 
-.personal-data__input:checked + label::after {
+input[type="checkbox"]:checked + label::after {
   display: block;
 }

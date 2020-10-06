@@ -1,56 +1,130 @@
-// .card-price {}
+.card-price {
+  position: relative;
+}
 
-// .card-price__wrap {
-//   padding: 38px 20px;
-//   padding-bottom: 49px;
-//   background-color: #90caff;
-// }
+.card-price__wrap {
+  padding: 40px 20px;
+  padding-bottom: 50px;
+  background-color: #90caff;
+}
 
-// .card-price__container {
-//   background-color: #ffffff;
-// }
+.card-price__container {
+  padding: 33px 17px 43px 18px;
+  background-color: #ffffff;
 
-// .card-price__name {
-//   margin-bottom: 20px;
-//   font-weight: bold;
-//   font-size: 18px;
-//   line-height: 24px;
+  &--main {
+    padding-bottom: 32px;
+    padding-left: 23px;
+  }
+}
 
-//   & b {
-//     font-size: 24px;
-//     line-height: 32px;
-//   }
-// }
+.card-price__name {
+  max-width: 228px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 
-// .card-price__list {
-//   @include list-reset;
-// }
+  & b {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
 
-// .card-price__item {
-//   position: relative;
-//   padding-left: 20px;
-//   font-size: 16px;
-//   line-height: 21px;
+.card-price__list {
+  @include list-reset;
+  margin-bottom: 34px;
+}
 
-//   &:not(:last-child) {
-//     margin-bottom: 12px;
-//   }
+.card-price__item {
+  position: relative;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 21px;
 
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     top: 10px;
-//     left: 0;
-//     min-width: 8px;
-//     height: 1px;
-//     background-color: #1e89e3;
-//   }
-// }
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
 
-// .card-price__box {}
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    min-width: 8px;
+    height: 1px;
+    background-color: #1e89e3;
+  }
+}
 
-// .card-price__text {}
+.card-price__box {
+  margin-bottom: 30px;
 
-// .card-price__cost {}
+  &--main .card-price__text--icon {
+    margin-bottom: 10px;
+  }
+}
 
-// .card-price__button {}
+.card-price__text {
+  font-size: 16px;
+  line-height: 21px;
+
+
+  & b {
+    font-weight: 700;
+  }
+
+  &--icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &--icon::before {
+    @include pseudo;
+    min-width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    background-image: url("../../img/clock-price.svg");
+  }
+}
+
+.card-price__cost {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.card-price__button {
+  max-width: 336px;
+  margin: 0 auto;
+  margin-top: -25px;
+
+  &--main {
+    margin-top: -30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-price__wrap {
+    padding: 44px 13px;
+  }
+
+  .card-price__container {
+    padding: 33px 30px;
+    padding-bottom: 43px;
+
+    &--main {
+      padding-bottom: 31px;
+    }
+  }
+
+  .card-price__name {
+    margin-bottom: 24px;
+  }
+
+  .card-price__button {
+    margin: 0;
+    margin-top: -32px;
+  }
+}

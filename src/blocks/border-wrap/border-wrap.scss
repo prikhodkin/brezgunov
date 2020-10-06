@@ -28,12 +28,19 @@
   }
 
   &--examples::before,
-  &--examples::after {
+  &--examples::after,
+  &--price::before,
+  &--price::after {
     background-image: url("../../img/Arrow-blue.svg");
   }
 
   &--examples {
     padding: 17px 13px;
+  }
+
+  &--price {
+    padding: 6px 13px;
+    padding-left: 54px;
   }
 }
 
@@ -86,5 +93,13 @@
     &--examples {
       padding: 17px 27px;
     }
+
+    &--price {
+      padding: 23px 30px;
+    }
+  }
+
+  .price__list {
+    display: flex;
   }
 }

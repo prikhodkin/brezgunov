@@ -65,7 +65,7 @@
       </div>
       <div class="header__contacts contacts">
         <a class="contacts__tel" href="tel:+79056960800">+7 (905) <b>696-08-00</b></a>
-        <a class="contacts__email" href="mailto:kirill@brezgunov.pro">kirill@brezgunov.pro</a>
+        <a class="contacts__email--header" href="mailto:kirill@brezgunov.pro">kirill@brezgunov.pro</a>
         <div class="contacts__socials contacts__socials--header socials">
           <div class="socials__wrap">
             <p class="socials__text">Написать мне в:</p>
@@ -174,8 +174,7 @@
         <div class="advantages__box">
           <h2 class="advantages__title title">Почему со мной удобно работать</h2>
           <div class="advantages__wrapper border-wrap">
-            <p class="border-wrap__text border-wrap__text--advantages"><span><b>Лично</b> отвечаю за качество своих
-                услуг</span> </p>
+            <p class="border-wrap__text border-wrap__text--advantages"><span><b>Лично</b> отвечаю за качество своих услуг</span> </p>
           </div>
         </div>
         <ul class="advantages__list">
@@ -184,41 +183,36 @@
               <p class="advantages__number">01</p>
               <p class="advantages__name">Заключаю договор</p>
             </div>
-            <p class="advantages__desc">Я официально зарегистрирован как самозанятый. Заключу с вами договор, в котором
-              прописаны все сроки и условия, а также предоставлю весь набор необходимой документации</p>
+            <p class="advantages__desc">Я официально зарегистрирован как самозанятый. Заключу с вами договор, в котором прописаны все сроки и условия, а также предоставлю весь набор необходимой документации</p>
           </li>
           <li class="advantages__item advantages__item--2">
             <div class="advantages__inner">
               <p class="advantages__number">02</p>
               <p class="advantages__name">Всегда на связи</p>
             </div>
-            <p class="advantages__desc">Постоянно онлайн в соц. сетях и <br> мессенджерах, до меня легко достучаться,
-              непрерывно держу вас в курсе состояния рекламной кампании</p>
+            <p class="advantages__desc">Постоянно онлайн в соц. сетях и <br> мессенджерах, до меня легко достучаться, непрерывно держу вас в курсе состояния рекламной кампании</p>
           </li>
           <li class="advantages__item advantages__item--3">
             <div class="advantages__inner">
               <p class="advantages__number">03</p>
               <p class="advantages__name">Подготавливаю отчётность</p>
             </div>
-            <p class="advantages__desc">Каждый понедельник высылаю вам отчет по рекламе, составляю глобальный отчет 1
-              раз в месяц и по вашему запросу</p>
+            <p class="advantages__desc">Каждый понедельник высылаю вам отчет по рекламе, составляю глобальный отчет 1 раз в месяц и по вашему запросу</p>
           </li>
           <li class="advantages__item advantages__item--4">
             <div class="advantages__inner">
               <p class="advantages__number">04</p>
               <p class="advantages__name">Максимально <br> прозрачен в работе</p>
             </div>
-            <p class="advantages__desc">Вы получаете доступ во все рекламные кабинеты и можете следить за процессом.
-              Разрабатываю план и стратегию на месяц, согласовывая с вами</p>
+            <p class="advantages__desc">Вы получаете доступ во все рекламные кабинеты и можете следить за процессом. Разрабатываю план и стратегию на месяц, согласовывая с вами</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="send">
+    <section class="send send--top">
       <div class="send__box">
         <h2 class="send__title title">Недовольны своим подрядчиком <span>по контекстной рекламе?</span> </h2>
-        <p class="send__text"><b>Проведу подробный аудит по его работе</b> и предоставлю список всех ошибок и
-          предложений по улучшению рекламы</p>
+        <p class="send__text"><b>Проведу подробный аудит по его работе</b> и предоставлю список всех ошибок и предложений по улучшению рекламы</p>
         <form class="send__form">
           <div class="send__inner">
             <input class="send__tel" type="tel" name="tel" id="form-tel" placeholder="+7 (___) ___-__-__">
@@ -240,7 +234,14 @@
           </div>
         </form>
       </div>
-      <div class="send__image"></div>
+      <div class="send__image">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="../img/send__top-desktop.webp">
+          <source media="(min-width: 1200px)" srcset="../img/send__top-desktop.png">
+          <source type="image/webp" srcset="../img/send__top-mobile.webp">
+          <img class="send__img" src="../img/send__top-mobile.png" alt="">
+        </picture>
+      </div>
     </section>
 
     <section class="customers">
@@ -250,8 +251,7 @@
           <p class="customers__desc">Порядок работ во время нашего сотрудничества</p>
         </div>
         <div class="customers__wrapper border-wrap border-wrap--customers">
-          <p class="border-wrap__text border-wrap__text--customers"><span>Окупаемость рекламных кампаний <b>всегда
-                ясна</b> </span> </p>
+          <p class="border-wrap__text border-wrap__text--customers"><span>Окупаемость рекламных кампаний <b>всегда ясна</b> </span> </p>
         </div>
       </div>
       <ul class="customers__list">
@@ -261,13 +261,11 @@
         </li>
         <li class="customers__item">
           <p class="customers__number">02</p>
-          <p class="customers__text">Подбираю <b>подходящие</b> инструменты для работы <br> именно с вашей рекламной
-            кампанией</p>
+          <p class="customers__text">Подбираю <b>подходящие</b> инструменты для работы <br> именно с вашей рекламной кампанией</p>
         </li>
         <li class="customers__item">
           <p class="customers__number">03</p>
-          <p class="customers__text">Согласовываю с вами список ключевых слов <br> и объявления <b>для каждого из
-              них</b> </p>
+          <p class="customers__text">Согласовываю с вами список ключевых слов <br> и объявления <b>для каждого из них</b> </p>
         </li>
         <li class="customers__item">
           <p class="customers__number">04</p>
@@ -283,8 +281,7 @@
         </li>
         <li class="customers__item">
           <p class="customers__number">07</p>
-          <p class="customers__text">В конце месяца составляю отчёт о распределении <br> бюджета и <b>достигнутых
-              показателях</b> </p>
+          <p class="customers__text">В конце месяца составляю отчёт о распределении <br> бюджета и <b>достигнутых показателях</b> </p>
         </li>
       </ul>
       <ul class="customers__list-bottom">
@@ -393,36 +390,37 @@
     <section class="price">
       <div class="price__box">
         <h2 class="price__title title">Стоимость моей проработки <span>вашей рекламной кампании</span> </h2>
-        <div class="price__wrapper border-wrap border-wrap--examples">
-          <p class="border-wrap__text border-wrap__text--price"><span><b>Повышайте прибыльность</b> своего бизнеса
-            </span> </p>
+        <div class="price__wrapper border-wrap border-wrap--price">
+          <p class="border-wrap__text border-wrap__text--price"><span><b>Повышайте прибыльность</b> своего бизнеса</span> </p>
         </div>
       </div>
       <ul class="price__list">
         <li class="price__item card-price">
-          <div class="card-price__wrap">
-            <p class="card-price__name">Настройка <b>Яндекс.Директ</b> </p>
-            <ul class="card-price__list">
-              <li class="card-price__item">Анализ конкурентов</li>
-              <li class="card-price__item">Сбор полного семантического ядра</li>
-              <li class="card-price__item">Минусация ключевых слов</li>
-              <li class="card-price__item">Кампания для поиска</li>
-              <li class="card-price__item">Кампании для РСЯ по группам (тест изображений)</li>
-              <li class="card-price__item">Ретаргетинг</li>
-              <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>
-              <li class="card-price__item">Настройка целей</li>
-              <li class="card-price__item">Автоматизация ставок</li>
-              <li class="card-price__item">Рекомендации по сайту</li>
-            </ul>
-            <div class="card-price__box">
-              <p class="card-price__text"><b>Время настройки:</b> от 5 дн</p>
-              <p class="card-price__text"><b>+ 2 недели</b> ведения</p>
+          <div class="price__inner card-price__wrap">
+            <div class="card-price__container">
+                <p class="card-price__name">Настройка <b>Яндекс.Директ</b> </p>
+              <ul class="card-price__list">
+                <li class="card-price__item">Анализ конкурентов</li>
+                <li class="card-price__item">Сбор полного семантического ядра</li>
+                <li class="card-price__item">Минусация ключевых слов</li>
+                <li class="card-price__item">Кампания для поиска</li>
+                <li class="card-price__item">Кампании для РСЯ по группам <br> (тест изображений)</li>
+                <li class="card-price__item">Ретаргетинг</li>
+                <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>
+                <li class="card-price__item">Настройка целей</li>
+                <li class="card-price__item">Автоматизация ставок</li>
+                <li class="card-price__item">Рекомендации по сайту</li>
+              </ul>
+              <div class="card-price__box">
+                <p class="card-price__text card-price__text--icon"><span><b>Время настройки:</b> от 5 дн</span> </p>
+                <p class="card-price__text"> <b>+ 2 недели </b>  ведения</p>
+              </div>
+              <div class="card-price__cost">14 990₽</div>
             </div>
-            <div class="card-price__cost">14 990₽</div>
           </div>
           <div class="card-price__button contact-me">
-            <p class="contact-me__text">Мне нужна настройка <b>Яндекс.Директ</b> Яндекс.Директ</p>
-            <a class="contact-me__button" href="#">
+            <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Яндекс.Директ</b></p>
+            <a class="contact-me__button contact-me__button--price" href="#">
               <svg class="contact-me__icon" width="48" height="48">
                 <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
               </svg>
@@ -430,57 +428,61 @@
           </div>
         </li>
         <li class="price__item card-price">
-          <div class="card-price__wrap">
-            <p class="card-price__name">Настройка Google Ads</p>
-            <ul class="card-price__list">
-              <li class="card-price__item">Анализ конкурентов</li>
-              <li class="card-price__item">Сбор полного семантического ядра</li>
-              <li class="card-price__item">Минусация ключевых слов</li>
-              <li class="card-price__item">Кампания для поиска</li>
-              <li class="card-price__item">Кампании для КМС по группам (тест изображений)</li>
-              <li class="card-price__item">Ретаргетинг</li>
-              <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>
-              <li class="card-price__item">Настройка целей</li>
-              <li class="card-price__item">Автоматизация ставок</li>
-              <li class="card-price__item">Рекомендации по сайту</li>
-            </ul>
-            <div class="card-price__box">
-              <p class="card-price__text">Время настройки: от 5 дн</p>
-              <p class="card-price__text">+ 2 недели ведения</p>
+          <div class="price__inner card-price__wrap">
+            <div class="card-price__container">
+              <p class="card-price__name">Настройка <br> <b>Google Ads</b> </p>
+              <ul class="card-price__list">
+                <li class="card-price__item">Анализ конкурентов</li>
+                <li class="card-price__item">Сбор полного семантического ядра</li>
+                <li class="card-price__item">Минусация ключевых слов</li>
+                <li class="card-price__item">Кампания для поиска</li>
+                <li class="card-price__item">Кампании для КМС по группам (тест изображений)</li>
+                <li class="card-price__item">Ретаргетинг</li>
+                <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>
+                <li class="card-price__item">Настройка целей</li>
+                <li class="card-price__item">Автоматизация ставок</li>
+                <li class="card-price__item">Рекомендации по сайту</li>
+              </ul>
+              <div class="card-price__box">
+                <p class="card-price__text card-price__text--icon">Время настройки: от 5 дн</p>
+                <p class="card-price__text">+ 2 недели ведения</p>
+              </div>
+              <div class="card-price__cost">14 990 ₽</div>
             </div>
-            <div class="card-price__cost">14 990 ₽</div>
           </div>
           <div class="card-price__button contact-me">
-            <p class="contact-me__text">Мне нужна настройка <b>Google Ads</b> </p>
-            <a class="contact-me__button" href="#">
+            <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Google Ads</b> </p>
+            <a class="contact-me__button contact-me__button--price" href="#">
               <svg class="contact-me__icon" width="48" height="48">
                 <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
               </svg>
             </a>
           </div>
         </li>
-        <li class="price__item card-price">
-          <div class="card-price__wrap">
-            <p class="card-price__name">Ведение рекламы <b>Яндекс.Директ или Google Ads</b> </p>
-            <ul class="card-price__list">
-              <li class="card-price__item">Контроль ставок по фразам</li>
-              <li class="card-price__item">Минусация нецелевых запросов</li>
-              <li class="card-price__item">Отключение неэффективных фраз</li>
-              <li class="card-price__item">A/B тесты заголовков, текстов и картинок</li>
-              <li class="card-price__item">Корректировки по полу, возрасту, времени, сегменту</li>
-              <li class="card-price__item">Чистка некачественных площадок РСЯ</li>
-              <li class="card-price__item">Добавление объявлений с новыми ключевыми запросами</li>
-              <li class="card-price__item">Отчетность каждый понедельник, и по вашему запросу</li>
-            </ul>
-            <div class="card-price__box">
-              <p class="card-price__text"><b>Ведение рекламы:</b>  30 дн</p>
-              <p class="card-price__text">Техническая поддержка <b>ежедневно</b> с <b>9:00</b> до <b>20:00</b> </p>
+        <li class="price__item price__item card-price">
+          <div class="price__inner price__inner--main card-price__wrap">
+            <div class="card-price__container card-price__container--main">
+              <p class="card-price__name">Ведение рекламы <b>Яндекс.Директ или Google Ads</b> </p>
+              <ul class="card-price__list">
+                <li class="card-price__item">Контроль ставок по фразам</li>
+                <li class="card-price__item">Минусация нецелевых запросов</li>
+                <li class="card-price__item">Отключение неэффективных фраз</li>
+                <li class="card-price__item">A/B тесты заголовков, текстов <br>  и картинок</li>
+                <li class="card-price__item">Корректировки по полу, <br> возрасту, времени, сегменту</li>
+                <li class="card-price__item">Чистка некачественных <br> площадок РСЯ</li>
+                <li class="card-price__item">Добавление объявлений с новыми ключевыми запросами</li>
+                <li class="card-price__item">Отчетность каждый понедельник, и по вашему запросу</li>
+              </ul>
+              <div class="card-price__box card-price__box--main">
+                <p class="card-price__text card-price__text--icon"><span><b>Ведение рекламы:</b>  30 дн</span> </p>
+                <p class="card-price__text">Техническая поддержка <b>ежедневно<br> </b> с <b>9:00</b> до <b>20:00</b> </p>
+              </div>
+              <div class="card-price__cost">от 9990 ₽</div>
             </div>
-            <div class="card-price__cost">от 9990 ₽</div>
           </div>
-          <div class="card-price__button contact-me">
+          <div class="card-price__button card-price__button--main contact-me">
             <p class="contact-me__text">Мне нужно <b>Ведение рекламы</b> </b> </p>
-            <a class="contact-me__button" href="#">
+            <a class="contact-me__button contact-me__button--dark contact-me__button--price" href="#">
               <svg class="contact-me__icon" width="48" height="48">
                 <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
               </svg>
@@ -489,7 +491,120 @@
         </li>
       </ul>
     </section>
+
+    <section class="appreciation">
+      <div class="appreciation__wrap">
+        <h2 class="appreciation__title title">Довольные клиенты </h2>
+        <p class="appreciation__desc">о сотрудничестве со мной:</p>
+        <div class="appreciation__box">
+          <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b> </p>
+          <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность, <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>  Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о профессионализме Брезгунова Кирилла Владимировича.</p>
+        </div>
+        <div class="appreciation__control control">
+          <button class="control__btn control__btn--back">
+            <span class="visually-hidden">Назад</span>
+            <svg class="control__icon">
+              <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+            </svg>
+          </button>
+          <p class="control__text"><span class="control__number control__number--1">1</span> <span class="control__number control__number--3">/ <b>3</b> </span></p>
+          <button class="control__btn control__btn--next">
+            <span class="visually-hidden">Вперед</span>
+            <svg class="control__icon control__icon--next">
+              <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="appreciation__wrapper">
+        <div class="appreciation__image">
+          <img class="appreciation__img" src="../img/appreciation__inventra.png" alt="">
+        </div>
+        <a class="appreciation__link" href="#" >
+          <svg class="appreciation__icon">
+            <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+          </svg>
+          <p>Смотреть скан отзыва</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="send send--bottom">
+      <div class="send__box send__box--bottom">
+        <h2 class="send__title send__title--bottom  title">Бесплатное ведение контекстной рекламы <span>при бюджете от <b>500 000 </b>₽ /мес</span> </h2>
+        <p class="send__text send__text--bottom">Оставьте свой номер телефона, и <b>в ближайшее время я свяжусь с вами</b>  для обсуждения деталей работы</p>
+        <form class="send__form">
+          <div class="send__inner">
+            <input class="send__tel" type="tel" name="tel" id="form-tel" placeholder="+7 (___) ___-__-__">
+            <div class="send__button contact-me contact-me--bottom">
+              <p class="contact-me__text contact-me__text--bottom">Оформить бесплатное ведение</p>
+              <label class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+                <input class="visually-hidden" type="submit">
+              </label>
+            </div>
+          </div>
+          <div class="send__checkbox send__checkbox--bottom personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-bottom">
+            <label class="personal-data__label" for="personal-data__check-bottom">
+              <p>Соглашаюсь с <span>политикой конфиденциальности</span> </p>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="send__image send__image--bottom">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="../img/send__bottom-desktop.webp">
+          <source media="(min-width: 1200px)" srcset="../img/send__bottom-desktop.png">
+          <source type="image/webp" srcset="../img/send__bottom-mobile.webp">
+          <img class="send__img send__img--bottom" src="../img/send__bottom-mobile.png" alt="">
+        </picture>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__box">
+      <p class="footer__name">Кирилл Брезгунов</p>
+      <p class="footer__desc">Специалист по настройке контекстной рекламы</p>
+    </div>
+    <div class="footer__contacts contacts">
+      <div class="contacts__box">
+        <a class="contacts__email contacts__email--footer" href="mailto:kirill@brezgunov.pro"><b>E-mail:</b>  kirill@brezgunov.pro</a>
+        <a class="contacts__tel contacts__tel--footer" href="tel:+79056960800"><b>Телефон:</b>  +7 (905) 696-08-00</a>
+      </div>
+      <div class="contacts__socials contacts__socials--footer socials">
+        <div class="socials__wrap socials__wrap--footer">
+          <p class="socials__text socials__text--footer">Написать мне:</p>
+          <ul class="socials__list socials__list--footer">
+            <li class="socials__item">
+              <a class="socials__link socials__link--viber" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a class="footer__copyright" href="#">Политика кофиденциальности</a>
+  </footer>
 </body>
 
 </html>

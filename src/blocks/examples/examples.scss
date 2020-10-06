@@ -1,11 +1,23 @@
 .examples {
+  position: relative;
   padding: 30px 0;
   padding-bottom: 45px;
 }
 
 .examples__box {
-  margin-bottom: 30px;
+  position: relative;
   padding: 0 20px;
+  padding-bottom: 70px;
+
+  &::before {
+    @include pseudo;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-image: url("../../img/examples__box-mobile.svg");
+  }
 }
 
 .examples__inner {
@@ -27,7 +39,7 @@
 }
 
 .examples__tasks {
-  padding: 55px 20px;
+  padding: 14px 20px;
   padding-bottom: 43px;
   color: #ffffff;
   background-color: #2295ff;
@@ -146,8 +158,18 @@
 @media (min-width: 1200px) {
   .examples {
     @include page-wrapper;
-    padding-top: 85px;
+    padding-top: 168px;
     padding-bottom: 80px;
+
+    &::before {
+      @include pseudo;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 100%;
+      height: 81px;
+      background-image: url("../../img/examples__top-desktop.svg");
+    }
   }
 
   .examples__box {
@@ -171,7 +193,7 @@
       width: 20px;
       height: 1px;
       margin-right: 14px;
-      background-color: $main-font;
+      background-color: $main-color;
     }
   }
 
