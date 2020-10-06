@@ -12,6 +12,11 @@
   background: linear-gradient(141.63deg, #ffd44d 22.52%, #ff844d 95.16%);
   border: none;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background: #0e5b74;
+  }
 
   &--next {
     margin-left: 23px;

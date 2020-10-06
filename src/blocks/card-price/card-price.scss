@@ -4,19 +4,17 @@
 
 .card-price__wrap {
   position: relative;
-  padding: 18px 20px;
-  padding-bottom: 16px;
+  padding: 44px 20px;
   background-color: #90caff;
 
   &::before {
     @include pseudo;
     position: absolute;
-    top: -19px;
+    top: 0px;
     left: 0;
-    z-index: -1;
     width: 100%;
     height: 20px;
-    background-image: url("../../img/card-price__wrap-top@mobile.svg");
+    background-image: url("../../img/card-top.png");
     background-position: top;
     background-size: cover;
   }
@@ -24,13 +22,12 @@
   &::after {
     @include pseudo;
     position: absolute;
-    bottom: -31px;
+    bottom: 0px;
     left: 0;
-    z-index: -1;
     width: 100%;
     height: 31px;
-    background-image: url("../../img/card-price__wrap-bottom@mobile.svg");
-    background-position: top;
+    background-image: url("../../img/card-bottom.png");
+    background-position: bottom;
     background-size: cover;
   }
 }
@@ -125,7 +122,8 @@
 .card-price__button {
   max-width: 336px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: -30px;
+  position: relative;
 
   &--main {
     margin-top: 6px;
@@ -134,36 +132,7 @@
 
 @media (min-width: 1200px) {
   .card-price__wrap {
-
-    margin-bottom: 34px;
-    padding: 25px 13px;
-    padding-bottom: 9px;
-
-    &::before {
-      @include pseudo;
-      position: absolute;
-      top: -19px;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 20px;
-      background-image: url("../../img/card-price__wrap-top.svg");
-      background-position: top;
-      background-size: cover;
-    }
-
-    &::after {
-      @include pseudo;
-      position: absolute;
-      bottom: -30px;
-      left: 0;
-      z-index: -1;
-      width: 100%;
-      height: 31px;
-      background-image: url("../../img/card-price__wrap-bottom.svg");
-      background-position: top;
-      background-size: cover;
-    }
+    padding: 44px 13px;
   }
 
   .card-price__container {

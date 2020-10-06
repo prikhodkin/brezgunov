@@ -12,6 +12,8 @@
     width: 100%;
     height: 26px;
     background-image: url("../../img/certificates__top-mobile.svg");
+    background-position: bottom;
+    background-size: cover;
   }
 }
 
@@ -44,6 +46,14 @@
 .certificates__item {
   &:not(:last-child) {
     margin-bottom: 74px;
+  }
+}
+
+@media (min-width: 400px) {
+  .certificates {
+    &::before {
+      background-image: url("../../img/certificates__top-desktop.svg");
+    }
   }
 }
 

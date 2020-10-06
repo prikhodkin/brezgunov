@@ -11,6 +11,10 @@
 }
 
 @font-face {
+  @include includeFont(900, $first-font, "SegoeUI-Blackво");
+}
+
+@font-face {
   @include includeFont(400, $second-font, "Raleway-Regular");
 }
 

@@ -2,10 +2,29 @@
   display: flex;
   align-items: flex-end;
   max-width: 221px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  appearance: none;
 
   &--bottom {
     width: 320px;
     min-width: 320px;
+  }
+
+  svg {
+    fill: #ffffff;
+  }
+
+  &:hover {
+    svg {
+      fill: #000000;
+    }
+
+    .contact-me__button {
+      background-image: url("../../img/phone__background-hover.svg");
+    }
   }
 }
 
@@ -36,6 +55,8 @@
   &--bottom::after {
     display: none;
   }
+
+
 }
 
 .contact-me__button {

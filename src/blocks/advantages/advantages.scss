@@ -60,7 +60,8 @@
 .advantages__list {
   @include list-reset;
   display: grid;
-  grid-row-gap: 60px;
+  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 420px));
   padding-right: 8px;
 }
 
@@ -114,7 +115,7 @@
   margin-left: 20px;
   font-weight: 800;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.3em;
   font-family: $second-font;
   text-transform: uppercase;
 }
@@ -122,6 +123,10 @@
 .advantages__desc {
   font-size: 18px;
   line-height: 24px;
+
+  b {
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -172,7 +177,6 @@
   .advantages__list {
     grid-column-gap: 136px;
     grid-row-gap: 108px;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 414px));
     padding-right: calc(50% - 505px);
     padding-left: calc(50% - 505px);
   }
