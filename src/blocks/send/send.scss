@@ -1,10 +1,73 @@
 .send {
+  position: relative;
   padding-top: 62px;
   padding-bottom: 75px;
+
+  &--top::before {
+    @include pseudo;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background-image: url("../../img/send-top__top-bottom.svg");
+  }
+
+  &--top::after {
+    @include pseudo;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 46px;
+    background-image: url("../../img/send-top__bottom-mobile.svg");
+  }
+
+  &--bottom {
+    padding-top: 75px;
+    padding-bottom: 98px;
+  }
+
+  &--bottom::before {
+    @include pseudo;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-image: url("../../img/send__top-mobile.svg");
+  }
+
+  &--bottom::after {
+    @include pseudo;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background-image: url("../../img/send__bottom-mobile-bottom.svg");
+  }
+
+  &--modal {
+    padding: 0;
+  }
 }
 
 .send__box {
   margin-bottom: 40px;
+
+  &--bottom {
+    margin-bottom: 0;
+  }
+
+  &--modal {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &--accepted {
+    margin-bottom: 0;
+  }
 }
 
 .send__title {
@@ -18,6 +81,16 @@
     font-size: 18px;
     line-height: 190%;
   }
+
+  &--modal {
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  &--modal span {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .send__text {
@@ -29,6 +102,11 @@
   & b {
     font-weight: 700;
   }
+
+  &--modal {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .send__form {
@@ -37,6 +115,11 @@
   align-items: center;
   padding-right: 68px;
   padding-left: 56px;
+
+  &--modal {
+    margin-bottom: 0;
+    padding: 0;
+  }
 }
 
 .send__inner {
@@ -61,27 +144,82 @@
 
 .send__checkbox {
   max-width: 190px;
+
+  &--bottom {
+    display: none;
+  }
 }
 
 .send__image {
   width: 343px;
   height: 345px;
   margin: 0 auto;
-  background-image: url("../../img/send__img.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
+
 
 @media (min-width: 1200px) {
   .send {
     display: flex;
-    padding-top: 75px;
+    padding-top: 125px;
     padding-right: calc(50% - 620px);
-    padding-bottom: 108px;
+    padding-bottom: 106px;
     padding-left: calc(50% - 500px);
+
+    &--bottom {
+      padding-top: 166px;
+      padding-bottom: 180px;
+      padding-left: calc(50% - 529px);
+    }
+
+    &--bottom::before {
+      height: 35px;
+      background-image: url("../../img/send__top-desktop.svg");
+    }
+
+    &--bottom::after {
+      @include pseudo;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 32px;
+      background-image: url("../../img/send__bottom-desktop-bottom.svg");
+    }
+
+    &--top::before {
+      @include pseudo;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      width: 100%;
+      height: 49px;
+      background-image: url("../../img/send-top__top-desktop.svg");
+    }
+
+    &--top::after {
+      @include pseudo;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 46px;
+      background-image: url("../../img/send-top__bottom-desktop.svg");
+    }
+
+    &--modal {
+      padding: 0;
+    }
+  }
+
+  .send__box {
+    &--bottom {
+      width: 613px;
+    }
   }
 
   .send__title {
+    position: relative;
+    z-index: 100;
     margin-bottom: 47px;
     padding: 0;
     font-size: 54px;
@@ -89,6 +227,25 @@
 
     & span {
       font-size: 24px;
+    }
+
+    &--bottom {
+      margin-bottom: 40px;
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    &--bottom b {
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 190%;
+      font-family: $first-font;
+    }
+
+    &--modal {
+      margin-bottom: 42px;
+      font-size: 46px;
+      line-height: 54px;
     }
   }
 
@@ -101,6 +258,11 @@
     font-size: 18px;
     line-height: 24px;
 
+    &--bottom {
+      max-width: 447px;
+      margin-bottom: 60px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -108,13 +270,26 @@
       left: 0;
       min-width: 20px;
       height: 1px;
-      background-color: $main-font;
+      background-color: $main-color;
+    }
+
+    &--modal {
+      margin: 0;
+    }
+
+    &--accepted::before {
+      background-color: #ffffff;
     }
   }
 
   .send__form {
     align-items: inherit;
     padding: 0;
+
+    &--modal {
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
   }
 
   .send__tel {
@@ -129,19 +304,42 @@
   }
 
   .send__inner {
+    z-index: 100;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 14px;
+
+    &--modal {
+      margin-bottom: 20px;
+    }
   }
 
   .send__checkbox {
     max-width: inherit;
+
+    &--bottom {
+      display: block;
+    }
   }
 
   .send__image {
     min-width: 604px;
     height: 604px;
-    background-position: 0 -12px;
+
+    &--bottom {
+      position: absolute;
+      top: 14%;
+      right: 350px;
+      width: 652px;
+    }
+  }
+
+  .send__img {
+    object-position: 0 -13px;
+
+    &--bottom {
+      object-position: 0;
+    }
   }
 }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gulp v4.1</title>
+  @@include('../blocks/favicon/favicon.html')
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" crossorigin="">
+  <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" crossorigin="">
+  <script src="js/vendor.js"></script>
+  <script src="js/general.js" defer></script>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page">
+  <section class="modal">
+    <div class="modal__wrap">
+      <div class="modal__image">
+        <img class="modal__img modal__img--free" src="../img/send__bottom-mobile.png" alt="">
+      </div>
+      <div class="modal__container modal__container--accepted modal__container--accepted-audit">
+        <div class="modal__wrapper modal__wrapper--accepted send send--modal">
+          <div class="send__box send__box--accepted send__box--modal">
+            <h2 class="send__title send__title--modal title"><span>бесплатное ведение рекламы</span> Ваша заявка принята</h2>
+            <p class="send__text send__text--modal send__text--accepted">Я получил ваши данные. Ожидайте звонок <b>в ближайшее время</b> </b>
+            </p>
+          </div>
+        </div>
+        <button class="modal__close close">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close__icon" width="12" height="12">
+            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
