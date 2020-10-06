@@ -18,3 +18,11 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1200px) {
+  .certificate__box {
+    margin-bottom: 20px;
+    padding: 14px 12px;
+    padding-bottom: 10px;
+  }
+}
