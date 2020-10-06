@@ -247,6 +247,10 @@
     }
   }
 
+  .send__container {
+    position: relative;
+  }
+
   .send__box {
     &--bottom {
       width: 613px;
@@ -384,8 +388,9 @@
 
     &--bottom {
       position: absolute;
-      top: 14%;
-      right: 350px;
+      top: -10%;
+      right: -525px;
+      z-index: -1;
       width: 652px;
     }
   }

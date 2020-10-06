@@ -138,6 +138,8 @@
 
   .advantages__items {
     @include page-wrapper;
+    position: relative;
+    z-index: 10000;
     display: flex;
     align-items: center;
     margin-bottom: 100px;
