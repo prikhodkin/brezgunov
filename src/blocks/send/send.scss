@@ -3,6 +3,11 @@
   padding-top: 62px;
   padding-bottom: 75px;
 
+  &--privacy {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   &--top::before {
     @include pseudo;
     position: absolute;
