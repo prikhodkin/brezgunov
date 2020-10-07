@@ -53,12 +53,16 @@
 }
 
 .appreciation__link {
-  position: absolute;
-  bottom: 179px;
+  position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
+  margin-top: -168px;
   padding: 51px 33px 31px 34px;
-  background-color: #ffb94d;
+  background-image: url("../img/link-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
   & p {
     font-weight: 700;
@@ -84,6 +88,10 @@
   display: none;
 }
 
+.appreciation__wrap {
+  margin-bottom: 60px;
+}
+
 @media (min-width: 1200px) {
   .appreciation {
     display: flex;
@@ -95,6 +103,10 @@
 
   .appreciation__title {
     margin-left: 75px;
+  }
+
+  .appreciation__container {
+    position: relative;
   }
 
   .appreciation__desc {
@@ -152,6 +164,9 @@
   }
 
   .appreciation__control {
+    position: absolute;
+    right: 182px;
+    bottom: 58px;
     max-width: 365px;
     margin: 0 auto;
   }
@@ -160,6 +175,10 @@
     display: block;
     padding: 66px 64px 31px 45px;
     background-color: #ffffff;
+  }
+
+  .appreciation__wrap {
+    display: flex;
   }
 
   .appreciation__img {
