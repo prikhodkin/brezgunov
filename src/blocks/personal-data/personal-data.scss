@@ -5,12 +5,16 @@
   color: #2295ff;
 
   & b {
-    text-decoration: underline;
     font-weight: 400;
+    text-decoration: underline;
   }
 
   & span {
     padding-left: 26px;
+  }
+
+  & a {
+    text-decoration-line: underline;
   }
 
   &::before {
