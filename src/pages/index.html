@@ -30,29 +30,29 @@
           <li class="navigation__item">
             <ul class="navigation__sublist">
               <li class="navigation__subitem navigation__subitem--top">
-                <a class="navigation__link navigation__link--top" href="#">Преимущества</a>
+                <a class="navigation__link navigation__link--top" href="#adv">Преимущества</a>
               </li>
               <li class="navigation__subitem navigation__subitem--top">
-                <a class="navigation__link navigation__link--top" href="#">Сертификаты</a>
+                <a class="navigation__link navigation__link--top" href="#sert">Сертификаты</a>
               </li>
               <li class="navigation__subitem navigation__subitem--top">
-                <a class="navigation__link navigation__link--top" href="#">Кейсы</a>
+                <a class="navigation__link navigation__link--top" href="#case">Кейсы</a>
               </li>
               <li class="navigation__subitem navigation__subitem--top">
-                <a class="navigation__link navigation__link--top" href="#">Стоимость</a>
+                <a class="navigation__link navigation__link--top" href="#price">Стоимость</a>
               </li>
               <li class="navigation__subitem navigation__subitem--top">
-                <a class="navigation__link navigation__link--top" href="#">Отзывы</a>
+                <a class="navigation__link navigation__link--top" href="#reviews">Отзывы</a>
               </li>
             </ul>
           </li>
           <li class="navigation__item">
             <ul class="navigation__sublist navigation__sublist--bottom">
               <li class="navigation__subitem navigation__subitem--bottom">
-                <a class="navigation__link navigation__link--bottom" href="#">Получить аудит</a>
+                <a class="navigation__link navigation__link--bottom" href="#audit">Получить аудит</a>
               </li>
               <li class="navigation__subitem navigation__subitem--bottom">
-                <a class="navigation__link navigation__link--bottom" href="#">Бесплатное ведение </a>
+                <a class="navigation__link navigation__link--bottom" href="#free">Бесплатное ведение </a>
               </li>
             </ul>
           </li>
@@ -73,21 +73,21 @@
           <p class="socials__text">Написать мне в:</p>
           <ul class="socials__list">
             <li class="socials__item">
-              <a class="socials__link socials__link--viber" href="#">
+              <a class="socials__link socials__link--viber" href="viber://chat?number=%2B79056960800">
                 <svg class="socials__icon">
                   <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--telegram" href="#">
+              <a class="socials__link socials__link--telegram" href="https://t.me/brezgunov">
                 <svg class="socials__icon">
                   <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link socials__link--whatsapp" href="#">
+              <a class="socials__link socials__link--whatsapp" href="https://wa.me/79056960800">
                 <svg class="socials__icon">
                   <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
                 </svg>
@@ -108,14 +108,15 @@
         <h2 class="promo__title title"><span>Надёжный специалист</span> по <br> контекстной рекламе </h2>
         <p class="promo__text">Общайтесь напрямую с исполнителем и <b>оперативно повышайте прибыль</b> своего бизнеса
         </p>
-        <div class="promo__button contact-me">
-          <div class="contact-me__text">Связаться со мной</div>
-          <a class="contact-me__button" href="#">
+
+        <a  href="javascript://" class="promo__button contact-me get-popup" data-popup="callback">
+          <p class="contact-me__text">Связаться со мной</p>
+          <div class="contact-me__button" >
             <svg class="contact-me__icon" width="48" height="48">
               <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
             </svg>
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
       <div class="promo__wrap promo__wrap--bottom">
         <div class="promo__image">
@@ -161,7 +162,7 @@
       </div>
     </div>
   </section>
-  <section class="advantages">
+  <section id="adv" class="advantages">
     <ul class="advantages__items">
       <li class="advantages__element advantages__element--1"><p><b>Сэкономлю</b><br> ваш бюджет</p></li>
       <li class="advantages__element advantages__element--2"><p><b>Оптимизирую</b> рекламную кампанию</p></li>
@@ -212,7 +213,7 @@
       </ul>
     </div>
   </section>
-  <section class="send send--top">
+  <section id="audit" class="send send--top">
     <div class="send__box">
       <h2 class="send__title title">Недовольны своим подрядчиком <span>по контекстной рекламе?</span></h2>
       <p class="send__text"><b>Проведу подробный аудит по его работе</b> и предоставлю список всех ошибок и предложений
@@ -222,7 +223,7 @@
         <input type="hidden" name="admin_email" value="info@prikhodkin.com">
         <input type="hidden" name="form_subject" value="Аудит | brezgunov">
         <div class="send__inner">
-          <input data-tel class="send__tel" type="tel" name="tel" id="form-tel" placeholder="+7 (___) ___-__-__">
+          <input data-tel class="send__tel" type="tel" name="tel" id="form-tel" required placeholder="+7 (___) ___-__-__">
           <button class="send__button contact-me">
             <span class="contact-me__text">Связаться со мной</span>
             <span class="contact-me__button">
@@ -235,7 +236,7 @@
         <div class="send__checkbox personal-data">
           <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check" checked>
           <label class="personal-data__label" for="personal-data__check">
-            <span>Соглашаюсь с <b>политикой конфиденциальности</b></span>
+            <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
           </label>
         </div>
       </form>
@@ -299,7 +300,7 @@
       <li class="customers__item-bottom customers__item-bottom--2">Согласовываем план на следующий месяц</li>
     </ul>
   </section>
-  <section class="certificates">
+  <section id="sert" class="certificates">
     <div class="certificates__box">
       <div class="certificates__inner">
         <h2 class="certificates__title title">Сертифицированный специалист по рекламе в Яндекс и Google</h2>
@@ -355,7 +356,7 @@
       </li>
     </ul>
   </section>
-  <section class="examples">
+  <section id="case" class="examples" data-controller="slider">
     <div class="examples__box">
       <div class="examples__inner">
         <h2 class="examples__title title">Примеры выполненных мною работ</h2>
@@ -365,7 +366,7 @@
         <p class="border-wrap__text border-wrap__text--examples"><span><b>Сэкономлю до 50%</b> от бюджета на рекламу</span></p>
       </div>
     </div>
-    <div class="examples__slider" data-controller="slider">
+    <div class="examples__slider" >
       <div data-target="slider.list">
         <div>
           <div class="examples__wrap">
@@ -453,7 +454,7 @@
       </button>
     </div>
   </section>
-  <section class="price">
+  <section id="price" class="price">
     <div class="price__box">
       <h2 class="price__title title">Стоимость моей проработки <span>вашей рекламной кампании</span></h2>
       <div class="price__wrapper border-wrap border-wrap--price">
@@ -485,7 +486,7 @@
             <div class="card-price__cost">14 990₽</div>
           </div>
         </div>
-        <a href="#" class="card-price__button contact-me">
+        <a href="javascript://" class="card-price__button contact-me get-popup" data-popup="yandex">
           <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Яндекс.Директ</b></p>
           <div class="contact-me__button contact-me__button--price">
             <svg class="contact-me__icon" width="48" height="48">
@@ -517,7 +518,7 @@
             <div class="card-price__cost">14 990 ₽</div>
           </div>
         </div>
-        <a href="#" class="card-price__button contact-me">
+        <a href="javascript://" class="card-price__button contact-me get-popup" data-popup="google">
           <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Google Ads</b></p>
           <div class="contact-me__button contact-me__button--price">
             <svg class="contact-me__icon" width="48" height="48">
@@ -547,8 +548,8 @@
             <div class="card-price__cost">от 9990 ₽</div>
           </div>
         </div>
-        <a href="#" class="card-price__button card-price__button--main contact-me">
-          <p class="contact-me__text">Мне нужно <b>Ведение рекламы</b> </p>
+        <a href="javascript://" class="card-price__button card-price__button--main contact-me get-popup" data-popup="all">
+          <p class="contact-me__text">Мне нужно <b>Ведение рекламы</b> </b> </p>
           <div class="contact-me__button contact-me__button--dark contact-me__button--price">
             <svg class="contact-me__icon" width="48" height="48">
               <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
@@ -558,43 +559,100 @@
       </li>
     </ul>
   </section>
-
-  <section class="appreciation">
-    <div class="appreciation__container">
-      <div class="appreciation__wrap">
-        <div class="appreciation__inner">
-          <h2 class="appreciation__title title">Довольные клиенты </h2>
-          <p class="appreciation__desc">о сотрудничестве со мной:</p>
-          <div class="appreciation__box">
-            <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>
-            <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность,
-              <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>
-              Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о
-              профессионализме Брезгунова Кирилла Владимировича.</p>
+  <section id="reviews" class="appreciation">
+    <div class="appreciation__container" data-controller="slider-count">
+      <div class="appreciation__list">
+        <div class="" data-target="slider-count.list">
+        <div class="appreciation__item">
+          <div class="appreciation__wrap">
+            <div class="appreciation__inner">
+              <h2 class="appreciation__title title">Довольные клиенты </h2>
+              <p class="appreciation__desc">о сотрудничестве со мной:</p>
+              <div class="appreciation__box">
+                <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>
+                <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность,
+                  <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>
+                  Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о
+                  профессионализме Брезгунова Кирилла Владимировича.</p>
+              </div>
+            </div>
+            <div class="appreciation__wrapper">
+              <div class="appreciation__image">
+                <img class="appreciation__img" src="../img/appreciation__inventra.png" alt="">
+              </div>
+              <a data-fancybox class="appreciation__link" href="../img/appreciation__inventra.png">
+                <svg class="appreciation__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+                </svg>
+                <p>Смотреть скан отзыва</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="appreciation__wrapper">
-          <div class="appreciation__image">
-            <img class="appreciation__img" src="../img/appreciation__inventra.png" alt="">
+        <div class="appreciation__item">
+          <div class="appreciation__wrap">
+            <div class="appreciation__inner">
+              <h2 class="appreciation__title title">Довольные клиенты </h2>
+              <p class="appreciation__desc">о сотрудничестве со мной:</p>
+              <div class="appreciation__box">
+                <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>
+                <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность,
+                  <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>
+                  Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о
+                  профессионализме Брезгунова Кирилла Владимировича.</p>
+              </div>
+            </div>
+            <div class="appreciation__wrapper">
+              <div class="appreciation__image">
+                <img class="appreciation__img" src="../img/appreciation__inventra.png" alt="">
+              </div>
+              <a data-fancybox class="appreciation__link" href="../img/appreciation__inventra.png">
+                <svg class="appreciation__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+                </svg>
+                <p>Смотреть скан отзыва</p>
+              </a>
+            </div>
           </div>
-          <a class="appreciation__link" href="#">
-            <svg class="appreciation__icon">
-              <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
-            </svg>
-            <p>Смотреть скан отзыва</p>
-          </a>
+        </div>
+        <div class="appreciation__item">
+          <div class="appreciation__wrap">
+            <div class="appreciation__inner">
+              <h2 class="appreciation__title title">Довольные клиенты </h2>
+              <p class="appreciation__desc">о сотрудничестве со мной:</p>
+              <div class="appreciation__box">
+                <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>
+                <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность,
+                  <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>
+                  Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о
+                  профессионализме Брезгунова Кирилла Владимировича.</p>
+              </div>
+            </div>
+            <div class="appreciation__wrapper">
+              <div class="appreciation__image">
+                <img class="appreciation__img" src="../img/appreciation__inventra.png" alt="">
+              </div>
+              <a data-fancybox class="appreciation__link" href="../img/appreciation__inventra.png">
+                <svg class="appreciation__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+                </svg>
+                <p>Смотреть скан отзыва</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+      </div>
       <div class="appreciation__control control">
-        <button class="control__btn control__btn--back">
+        <button class="control__btn control__btn--back" data-target="slider-count.prev">
           <span class="visually-hidden">Назад</span>
           <svg class="control__icon">
             <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
           </svg>
         </button>
-        <p class="control__text"><span class="control__number control__number--1">1</span> <span
-          class="control__number control__number--3">/ <b>3</b> </span></p>
-        <button class="control__btn control__btn--next">
+        <p class="control__text"><span class="control__number control__number--1" data-target="slider-count.current">1</span> <span
+          class="control__number control__number--3">/ <b data-target="slider-count.length">1</b> </span></p>
+        <button class="control__btn control__btn--next" data-target="slider-count.next">
           <span class="visually-hidden">Вперед</span>
           <svg class="control__icon control__icon--next">
             <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
@@ -603,8 +661,7 @@
       </div>
     </div>
   </section>
-
-  <section class="send send--bottom">
+  <section id="free" class="send send--bottom">
     <div class="send__container">
       <div class="send__box send__box--bottom">
         <h2 class="send__title send__title--bottom  title">Бесплатное ведение контекстной рекламы <span>при бюджете от <b>500 000 ₽</b> /мес</span>
@@ -612,22 +669,24 @@
         <p class="send__text send__text--bottom">Оставьте свой номер телефона, и <b>в ближайшее время я свяжусь с вами</b>
           для обсуждения деталей работы</p>
         <form class="send__form">
+          <input type="hidden" name="project_name" value="brezgunov">
+          <input type="hidden" name="admin_email" value="info@prikhodkin.com">
+          <input type="hidden" name="form_subject" value="Бесплатное ведение | brezgunov">
           <div class="send__inner">
-            <input class="send__tel" type="tel" name="tel" id="form-tel1" placeholder="+7 (___) ___-__-__">
-            <div class="send__button contact-me contact-me--bottom">
+            <input class="send__tel" type="tel" name="tel" id="form-tel1" data-tel required placeholder="+7 (___) ___-__-__">
+            <button class="send__button contact-me contact-me--bottom">
               <p class="contact-me__text contact-me__text--bottom">Оформить бесплатное ведение</p>
               <label class="contact-me__button">
                 <svg class="contact-me__icon" width="48" height="48">
                   <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
                 </svg>
-                <input class="visually-hidden" type="submit">
               </label>
-            </div>
+            </button>
           </div>
           <div class="send__checkbox send__checkbox--bottom personal-data">
-            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-bottom">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-bottom" checked>
             <label class="personal-data__label" for="personal-data__check-bottom">
-              <span>Соглашаюсь с <b>политикой конфиденциальности</b></span>
+               <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
             </label>
           </div>
         </form>
@@ -659,21 +718,21 @@
         <p class="socials__text socials__text--footer">Написать мне:</p>
         <ul class="socials__list socials__list--footer">
           <li class="socials__item">
-            <a class="socials__link socials__link--viber" href="#">
+            <a class="socials__link socials__link--viber" href="viber://chat?number=%2B79056960800">
               <svg class="socials__icon">
                 <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--telegram" href="#">
+            <a class="socials__link socials__link--telegram" href="https://t.me/brezgunov">
               <svg class="socials__icon">
                 <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a class="socials__link socials__link--whatsapp" href="#">
+            <a class="socials__link socials__link--whatsapp" href="https://wa.me/79056960800">
               <svg class="socials__icon">
                 <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
               </svg>
@@ -683,8 +742,168 @@
       </div>
     </div>
   </div>
-  <a class="footer__copyright" href="#">Политика кофиденциальности</a>
+  <a class="footer__copyright" href="privacy.html">Политика кофиденциальности</a>
 </footer>
+<section class="modal popup" data-popup="callback">
+  <div class="popup__wrapper">
+    <div class="modal__container ">
+    <div class="modal__wrapper send send--modal">
+      <div class="send__box send__box--modal">
+        <h2 class="send__title send__title--modal title"><span>кирилл брезгунов</span>  связаться со мной </h2>
+        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+      </div>
+      <form class="send__form send__form--modal">
+        <input type="hidden" name="project_name" value="brezgunov">
+        <input type="hidden" name="admin_email" value="info@prikhodkin.com">
+        <input type="hidden" name="form_subject" value="Обратная связь | brezgunov">
+        <div class="send__inner send__inner--modal">
+          <input class="send__tel" type="tel" name="tel" data-tel placeholder="+7 (___) ___-__-__">
+          <button class="send__button contact-me">
+            <p class="contact-me__text">Связаться со мной</p>
+            <label class="contact-me__button">
+              <svg class="contact-me__icon" width="48" height="48">
+                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+              </svg>
+            </label>
+          </button>
+        </div>
+        <div class="send__checkbox personal-data">
+          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check" checked>
+          <label class="personal-data__label" for="personal-data__check">
+            <p>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </p>
+          </label>
+        </div>
+      </form>
+    </div>
+    <button class="modal__close close popup__close">
+      <span class="visually-hidden">Закрыть</span>
+      <svg class="close__icon" width="12" height="12">
+        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+      </svg>
+    </button>
+  </div>
+  </div>
+</section>
+<section class="modal popup" data-popup="yandex">
+  <div class="popup__wrapper">
+    <div class="modal__container">
+    <div class="modal__wrapper send send--modal">
+      <div class="send__box send__box--modal">
+        <h2 class="send__title send__title--modal title"><span>настройка</span>   яндекс.директ </h2>
+        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+      </div>
+      <form class="send__form send__form--modal">
+        <input type="hidden" name="project_name" value="brezgunov">
+        <input type="hidden" name="admin_email" value="info@prikhodkin.com">
+        <input type="hidden" name="form_subject" value="Яндекс | brezgunov">
+        <div class="send__inner send__inner--modal">
+          <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">
+          <button class="send__button contact-me">
+            <p class="contact-me__text">Связаться со мной</p>
+            <label class="contact-me__button">
+              <svg class="contact-me__icon" width="48" height="48">
+                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+              </svg>
+            </label>
+          </button>
+        </div>
+        <div class="send__checkbox personal-data">
+          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check" checked>
+          <label class="personal-data__label" for="personal-data__check">
+            <p>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </p>
+          </label>
+        </div>
+      </form>
+    </div>
+    <button class="modal__close popup__close close">
+      <span class="visually-hidden">Закрыть</span>
+      <svg class="close__icon" width="12" height="12">
+        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+      </svg>
+    </button>
+  </div>
+  </div>
+</section>
+<section class="modal popup" data-popup="google">
+  <div class="popup__wrapper">
+    <div class="modal__container">
+    <div class="modal__wrapper send send--modal">
+      <div class="send__box send__box--modal">
+        <h2 class="send__title send__title--modal title"><span>настройка</span>   google ads </h2>
+        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+      </div>
+      <form class="send__form send__form--modal">
+        <input type="hidden" name="project_name" value="brezgunov">
+        <input type="hidden" name="admin_email" value="info@prikhodkin.com">
+        <input type="hidden" name="form_subject" value="Google | brezgunov">
+        <div class="send__inner send__inner--modal">
+          <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">
+          <button class="send__button contact-me">
+            <p class="contact-me__text">Связаться со мной</p>
+            <label class="contact-me__button">
+              <svg class="contact-me__icon" width="48" height="48">
+                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+              </svg>
+            </label>
+          </button>
+        </div>
+        <div class="send__checkbox personal-data">
+          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check" checked>
+          <label class="personal-data__label" for="personal-data__check">
+            <p>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </p>
+          </label>
+        </div>
+      </form>
+    </div>
+    <button class="modal__close popup__close close">
+      <span class="visually-hidden">Закрыть</span>
+      <svg class="close__icon" width="12" height="12">
+        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+      </svg>
+    </button>
+  </div>
+  </div>
+</section>
+<section class="modal popup" data-popup="all">
+  <div class="popup__wrapper">
+    <div class="modal__container">
+    <div class="modal__wrapper send send--modal">
+      <div class="send__box send__box--modal">
+        <h2 class="send__title send__title--modal title"><span>Ведение рекламы</span></h2>
+        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+      </div>
+      <form class="send__form send__form--modal">
+        <input type="hidden" name="project_name" value="brezgunov">
+        <input type="hidden" name="admin_email" value="info@prikhodkin.com">
+        <input type="hidden" name="form_subject" value="Ведение | brezgunov">
+        <div class="send__inner send__inner--modal">
+          <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">
+          <button class="send__button contact-me">
+            <p class="contact-me__text">Связаться со мной</p>
+            <label class="contact-me__button">
+              <svg class="contact-me__icon" width="48" height="48">
+                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+              </svg>
+            </label>
+          </button>
+        </div>
+        <div class="send__checkbox personal-data">
+          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check" checked>
+          <label class="personal-data__label" for="personal-data__check">
+            <p>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </p>
+          </label>
+        </div>
+      </form>
+    </div>
+    <button class="modal__close popup__close close">
+      <span class="visually-hidden">Закрыть</span>
+      <svg class="close__icon" width="12" height="12">
+        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+      </svg>
+    </button>
+  </div>
+  </div>
+</section>
 <script src="js/vendor.js"></script>
 <script src="js/general.js"></script>
 </body>
