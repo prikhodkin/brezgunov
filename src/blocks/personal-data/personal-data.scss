@@ -4,14 +4,12 @@
   line-height: 19px;
   color: #2295ff;
 
-  // display: flex;
-  // align-items: flex-start;
-
-  & span {
+  & b {
     text-decoration: underline;
+    font-weight: 400;
   }
 
-  & p {
+  & span {
     padding-left: 26px;
   }
 
