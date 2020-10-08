@@ -57,6 +57,8 @@
   }
 
   &--bottom {
+    width: 320px;
+    margin: 0 auto;
     margin-bottom: 92px;
     line-height: 0;
   }
@@ -154,6 +156,11 @@
   line-height: 0;
 }
 
+.promo__socials {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .promo__socials {
     display: none;
@@ -227,7 +234,7 @@
 
     &--bottom {
       order: -1;
-      margin-bottom: 0;
+      margin: 0;
       background: transparent;
     }
   }
