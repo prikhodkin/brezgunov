@@ -18,7 +18,6 @@ module.exports = function scripts() {
     .pipe(plumber())
     .pipe(webpackStream(webpackConfig), webpack)
     .pipe(rename({dirname: ''}))
-    .pipe(gulpif(production, uglify()))
     .pipe(gulpif(production, rename({suffix: ".min"})))
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(browserSync.reload({

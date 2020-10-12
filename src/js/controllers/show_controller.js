@@ -17,6 +17,8 @@ export default class extends Controller {
     this.itemTargets.forEach((item)=> {
       if(item.getBoundingClientRect().top <= 250) {
         item.classList.add(activeClass);
+      } else {
+        item.classList.remove(activeClass);
       }
     })
   }
