@@ -1,1 +1,1066 @@
-<!DOCTYPE html><html lang="ru"><head>  <meta charset="UTF-8">  <title>Gulp v4.1</title>  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png"><link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png"><link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png"><link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png"><meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png"><meta name="theme-color" content="#ffffff">  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" crossorigin>  <link rel="preload" href="fonts/Raleway-Black.woff2" as="font" crossorigin>  <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font" crossorigin>  <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" crossorigin>  <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" crossorigin>  <link rel="preload" href="fonts/SegoeUI-Bold.woff2" as="font" crossorigin>  <link rel="preload" href="fonts/SegoeUI-SemiBold.woff2" as="font" crossorigin>  <link rel="stylesheet" href="css/main.min.css"></head><body class="page"><header class="header">  <div class="header__container">    <div class="header__box">      <div class="header__inner">        <button class="burger header__toggle">          <span class="burger__button">Открыть меню</span>        </button>        <p class="header__text">Меню</p>      </div>      <nav class="header__nav header__nav--closed navigation">        <ul class="navigation__list">          <li class="navigation__item">            <ul class="navigation__sublist">              <li class="navigation__subitem navigation__subitem--top">                <a class="navigation__link navigation__link--top" href="#adv">Преимущества</a>              </li>              <li class="navigation__subitem navigation__subitem--top">                <a class="navigation__link navigation__link--top" href="#sert">Сертификаты</a>              </li>              <li class="navigation__subitem navigation__subitem--top">                <a class="navigation__link navigation__link--top" href="#case">Кейсы</a>              </li>              <li class="navigation__subitem navigation__subitem--top">                <a class="navigation__link navigation__link--top" href="#price">Стоимость</a>              </li>              <li class="navigation__subitem navigation__subitem--top">                <a class="navigation__link navigation__link--top" href="#reviews">Отзывы</a>              </li>            </ul>          </li>          <li class="navigation__item">            <ul class="navigation__sublist navigation__sublist--bottom">              <li class="navigation__subitem navigation__subitem--bottom">                <a class="navigation__link navigation__link--bottom" href="#audit">Получить аудит</a>              </li>              <li class="navigation__subitem navigation__subitem--bottom">                <a class="navigation__link navigation__link--bottom" href="#free">Бесплатное ведение </a>              </li>            </ul>          </li>        </ul>        <button class="navigation__close close">          <span class="visually-hidden">Закрыть</span>          <svg class="close__icon" width="12" height="12">            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>          </svg>        </button>      </nav>    </div>    <div class="header__contacts contacts">      <a class="contacts__tel" href="tel:+79056960800">+7 (905) <b>696-08-00</b></a>      <a class="contacts__email--header" href="mailto:kirill@brezgunov.pro">kirill@brezgunov.pro</a>      <div class="contacts__socials contacts__socials--header socials">        <div class="socials__wrap">          <p class="socials__text">Написать мне в:</p>          <ul class="socials__list">            <li class="socials__item">              <a class="socials__link socials__link--viber" href="viber://chat?number=%2B79056960800">                <svg class="socials__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>                </svg>              </a>            </li>            <li class="socials__item">              <a class="socials__link socials__link--telegram" href="https://t.me/brezgunov">                <svg class="socials__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>                </svg>              </a>            </li>            <li class="socials__item">              <a class="socials__link socials__link--whatsapp" href="https://wa.me/79056960800">                <svg class="socials__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>                </svg>              </a>            </li>          </ul>        </div>      </div>    </div>  </div></header><main class="main">  <h1 class="visually-hidden">Кирилл Брезгунов, контекстная реклама</h1>  <section class="promo">    <div class="promo__container">      <div class="promo__wrap promo__wrap--top">        <h2 class="promo__title title"><span>Надёжный специалист</span> по <br> контекстной рекламе </h2>        <p class="promo__text">Общайтесь напрямую с исполнителем и <b>оперативно повышайте прибыль</b> своего бизнеса</p>        <a  href="javascript://" class="promo__button contact-me get-popup" data-popup="callback">          <p class="contact-me__text">Связаться со мной</p>          <div class="contact-me__button" >            <svg class="contact-me__icon" width="48" height="48">              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>            </svg>          </div>        </a>      </div>      <div class="promo__wrap promo__wrap--bottom">        <div class="promo__image">          <picture>            <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-Kirill@desktop.webp">            <source media="(min-width: 1200px)" srcset="img/photo-Kirill@desktop.png">            <source type="image/webp" srcset="img/photo-Kirill@mobile.webp">            <img class="promo__img" src="img/photo-Kirill@mobile.png" alt="Фотография Кирилла Брезгунова">          </picture>        </div>        <div class="promo__box">          <p class="promo__name">Кирилл Брезгунов</p>          <p class="promo__desc">Специалист по настройке контекстной рекламы</p>        </div>      </div>      <div class="promo__socials socials">        <div class="socials__wrap">          <p class="socials__text">Написать мне в:</p>          <ul class="socials__list">            <li class="socials__item">              <a class="socials__link socials__link--viber" href="#">                <svg class="socials__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>                </svg>              </a>            </li>            <li class="socials__item">              <a class="socials__link socials__link--telegram" href="#">                <svg class="socials__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>                </svg>              </a>            </li>            <li class="socials__item">              <a class="socials__link socials__link--whatsapp" href="#">                <svg class="socials__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>                </svg>              </a>            </li>          </ul>        </div>      </div>    </div>  </section>  <section id="adv" class="advantages">    <ul class="advantages__items">      <li class="advantages__element advantages__element--1"><p><b>Сэкономлю</b><br> ваш бюджет</p></li>      <li class="advantages__element advantages__element--2"><p><b>Оптимизирую</b> рекламную кампанию</p></li>      <li class="advantages__element advantages__element--3"><p>Снижу <b>стоимость обращения</b> клиента</p></li>      <li class="advantages__element advantages__element--4"><p><b>Повышу количество</b> заявок и звонков</p></li>    </ul>    <div class="advantages__wrap">      <div class="advantages__box">        <h2 class="advantages__title title">Почему со мной удобно работать</h2>        <div class="advantages__wrapper border-wrap">          <p class="border-wrap__text border-wrap__text--advantages"><span><b>Лично</b> отвечаю за качество своих услуг</span>          </p>        </div>      </div>      <ul class="advantages__list">        <li class="advantages__item advantages__item--1">          <div class="advantages__inner ">            <p class="advantages__number">01</p>            <p class="advantages__name">Заключаю договор</p>          </div>          <p class="advantages__desc">Я <b>официально</b> зарегистрирован как самозанятый. Заключу с вами договор, в котором            прописаны <b>все сроки и условия</b>, а также предоставлю весь набор необходимой документации</p>        </li>        <li class="advantages__item advantages__item--2">          <div class="advantages__inner">            <p class="advantages__number">02</p>            <p class="advantages__name">Всегда на связи</p>          </div>          <p class="advantages__desc">Постоянно онлайн в соц. сетях и <br> мессенджерах, до меня <b>легко достучаться,</b>            непрерывно <b>держу вас в курсе</b>  состояния рекламной кампании</p>        </li>        <li class="advantages__item advantages__item--3">          <div class="advantages__inner">            <p class="advantages__number">03</p>            <p class="advantages__name">Подготавливаю отчётность</p>          </div>          <p class="advantages__desc"><b>Каждый понедельник</b> высылаю вам отчет по рекламе, составляю <b>глобальный отчет </b>1 раз            в месяц и <b>по вашему запросу</b></p>        </li>        <li class="advantages__item advantages__item--4">          <div class="advantages__inner">            <p class="advantages__number">04</p>            <p class="advantages__name">Максимально <br> прозрачен в работе</p>          </div>          <p class="advantages__desc">Вы получаете доступ <b>во все рекламные кабинеты</b> и можете следить за процессом.            Разрабатываю план и стратегию на месяц, согласовывая с вами</p>        </li>      </ul>    </div>  </section>  <section id="audit" class="send send--top">    <div class="send__box">      <h2 class="send__title title">Недовольны своим подрядчиком <span>по контекстной рекламе?</span></h2>      <p class="send__text"><b>Проведу подробный аудит по его работе</b> и предоставлю список всех ошибок и предложений        по улучшению рекламы</p>      <form class="send__form">        <input type="hidden" name="project_name" value="brezgunov">        <input type="hidden" name="admin_email" value="info@prikhodkin.com">        <input type="hidden" name="form_subject" value="Аудит | brezgunov">        <div class="send__inner">          <input data-tel class="send__tel" type="tel" name="tel" id="form-tel" required placeholder="+7 (___) ___-__-__">          <button class="send__button contact-me">            <span class="contact-me__text">Связаться со мной</span>            <span class="contact-me__button">              <svg class="contact-me__icon" width="48" height="48">                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>              </svg>            </span>          </button>        </div>        <div class="send__checkbox personal-data">          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check" checked>          <label class="personal-data__label" for="personal-data__check">            <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>          </label>        </div>      </form>    </div>    <div class="send__image">      <picture>        <source media="(min-width: 1200px)" type="image/webp" srcset="img/send__top-desktop.webp">        <source media="(min-width: 1200px)" srcset="img/send__top-desktop.png">        <source type="image/webp" srcset="img/send__top-mobile.webp">        <img class="send__img" src="img/send__top-mobile.png" alt="">      </picture>    </div>  </section>  <section class="customers">    <h2 class="visually-hidden">Этапы привлечения клиентов</h2>    <div class="customers__box">      <div class="customers__inner">        <div class="customers__title title">Как я привожу клиентов в ваш бизнес</div>        <p class="customers__desc">Порядок работ во время нашего сотрудничества</p>      </div>      <div class="customers__wrapper border-wrap border-wrap--customers">        <p class="border-wrap__text border-wrap__text--customers">          <span>Окупаемость рекламных кампаний <b>всегда ясна</b> </span></p>      </div>    </div>    <ul class="customers__list" data-controller="show">      <li class="customers__item" data-target="show.item">        <p class="customers__number">01</p>        <p class="customers__text"><b>Подробно</b> анализирую нишу ваших услуг</p>      </li>      <li class="customers__item" data-target="show.item">        <p class="customers__number">02</p>        <p class="customers__text">Подбираю <b>подходящие</b> инструменты для работы <br> именно с вашей рекламной          кампанией</p>      </li>      <li class="customers__item" data-target="show.item">        <p class="customers__number">03</p>        <p class="customers__text">Согласовываю с вами список ключевых слов <br> и объявления <b>для каждого из них</b>        </p>      </li>      <li class="customers__item" data-target="show.item">        <p class="customers__number">04</p>        <p class="customers__text">Подготавливаю рекламную кампанию и запускаю в работу</p>      </li>      <li class="customers__item" data-target="show.item">        <p class="customers__number">05</p>        <p class="customers__text">Анализирую результаты <b>каждый день</b></p>      </li>      <li class="customers__item" data-target="show.item">        <p class="customers__number">06</p>        <p class="customers__text">Улучшаю рекламную кампанию и<b> повышаю вашу прибыль</b></p>      </li>      <li class="customers__item" data-target="show.item">        <p class="customers__number">07</p>        <p class="customers__text">В конце месяца составляю отчёт о распределении <br> бюджета и <b>достигнутых          показателях</b></p>      </li>    </ul>    <ul class="customers__list-bottom">      <li class="customers__item-bottom customers__item-bottom--1">Даю рекомендации по дальнейшей стратегии</li>      <li class="customers__item-bottom customers__item-bottom--2">Согласовываем план на следующий месяц</li>    </ul>  </section>  <section id="sert" class="certificates">    <div class="certificates__box">      <div class="certificates__inner">        <h2 class="certificates__title title">Сертифицированный специалист по рекламе в Яндекс и Google</h2>        <p class="certificates__desc">Посмотрите на официальное подтверждение моих навыков</p>      </div>      <div class="certificates__wrap certificate">        <div class="certificate__box">          <picture>            <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__google@desktop.webp">            <source media="(min-width: 1200px)" srcset="img/certificate__google@desktop.png">            <source type="image/webp" srcset="img/certificate__google@mobile.webp">            <img class="certificate__img" src="img/certificate__google@mobile.png" alt="Сертификат Google">          </picture>        </div>        <p class="certificate__text">Сертификация Google Рекламы по проведению поисковых кампаний Google</p>      </div>    </div>    <ul class="certificates__list">      <li class="certificates__item certificate">        <div class="certificate__box">          <picture>            <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__google-analytics@desktop.webp">            <source media="(min-width: 1200px)" srcset="img/certificate__google-analytics@desktop.png">            <source type="image/webp" srcset="img/certificate__google-analytics@mobile.webp">            <img class="certificate__img" src="img/certificate__google-analytics@mobile.png"                 alt="Сертификат Google analytics">          </picture>        </div>        <p class="certificate__text">Google Analytics Individual <br> Qualification Google</p>      </li>      <li class="certificates__item certificate">        <div class="certificate__box">          <picture>            <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__yandex@desktop.webp">            <source media="(min-width: 1200px)" srcset="img/certificate__yandex@desktop.png">            <source type="image/webp" srcset="img/certificate__yandex@mobile.webp">            <img class="certificate__img" src="img/certificate__yandex@mobile.png" alt="Сертификат Google">          </picture>        </div>        <p class="certificate__text">Сертификат Яндекс Директ <br> с прокторингом</p>      </li>      <li class="certificates__item certificate">        <div class="certificate__box">          <picture>            <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__yandex-metrica@desktop.webp">            <source media="(min-width: 1200px)" srcset="img/certificate__yandex-metrica@desktop.png">            <source type="image/webp" srcset="img/certificate__yandex-metrica@mobile.webp">            <img class="certificate__img" src="img/certificate__yandex-metrica@mobile.png" alt="Сертификат Google">          </picture>        </div>        <p class="certificate__text">Сертификат Яндекс Метрика</p>      </li>    </ul>  </section>  <section id="case" class="examples" data-controller="slider">    <div class="examples__box">      <div class="examples__inner">        <h2 class="examples__title title">Примеры выполненных мною работ</h2>        <p class="examples__desc">Несколько самых прибыльных кейсов</p>      </div>      <div class="examples__wrapper border-wrap border-wrap--examples">        <p class="border-wrap__text border-wrap__text--examples"><span><b>Сэкономлю до 50%</b> от бюджета на рекламу</span></p>      </div>    </div>    <div class="examples__slider" >      <div data-target="slider.list">        <div>          <div class="examples__wrap">          <div class="examples__tasks">            <div class="examples__container">              <p class="examples__number">01</p>              <p class="examples__subtitle"><span>«</span>Технология уюта и комфорта <span>»</span></p>            </div>            <p class="examples__description">Производство пластиковых окон, натяжных потолков, жалюзи</p>            <ul class="examples__list">              <li class="examples__item">                <p class="examples__text examples__text--title examples__text--title-top">Задачи по проекту:</p>                <p class="examples__text">Увеличение количества клиентов</p>              </li>              <li class="examples__item">                <p class="examples__text examples__text--title examples__text--title-bottom">Было сделано:</p>                <p class="examples__text">Настроена контекстная реклама</p>              </li>            </ul>          </div>          <div class="examples__result">            <p class="examples__name">Фактический результат в цифрах:</p>            <p class="examples__text examples__text--result"><b>201</b> заявка в месяц</p>            <p class="examples__text examples__text--result"><b>218.88 руб.</b> стоимость привлечения заявки</p>          </div>          <div class="examples__image">            <picture>              <source media="(min-width: 1200px)" type="image/webp" srcset="img/examples__photo-desktop.webp">              <source media="(min-width: 1200px)" srcset="img/examples__photo-desktop.jpg">              <source type="image/webp" srcset="img/examples__photo.webp">              <img class="examples__img" src="img/examples__photo.jpg" alt="">            </picture>          </div>        </div>        </div>        <div>          <div class="examples__wrap">          <div class="examples__tasks">            <div class="examples__container">              <p class="examples__number">01</p>              <p class="examples__subtitle"><span>«</span>Технология уюта и комфорта <span>»</span></p>            </div>            <p class="examples__description">Производство пластиковых окон, натяжных потолков, жалюзи</p>            <ul class="examples__list">              <li class="examples__item">                <p class="examples__text examples__text--title examples__text--title-top">Задачи по проекту:</p>                <p class="examples__text">Увеличение количества клиентов</p>              </li>              <li class="examples__item">                <p class="examples__text examples__text--title examples__text--title-bottom">Было сделано:</p>                <p class="examples__text">Настроена контекстная реклама</p>              </li>            </ul>          </div>          <div class="examples__result">            <p class="examples__name">Фактический результат в цифрах:</p>            <p class="examples__text examples__text--result"><b>201</b> заявка в месяц</p>            <p class="examples__text examples__text--result"><b>218.88 руб.</b> стоимость привлечения заявки</p>          </div>          <div class="examples__image">            <picture>              <source media="(min-width: 1200px)" type="image/webp" srcset="img/examples__photo-desktop.webp">              <source media="(min-width: 1200px)" srcset="img/examples__photo-desktop.jpg">              <source type="image/webp" srcset="img/examples__photo.webp">              <img class="examples__img" src="img/examples__photo.jpg" alt="">            </picture>          </div>        </div>        </div>      </div>    </div>    <div class="examples__control control">      <button class="control__btn control__btn--back" data-target="slider.prev">        <span class="visually-hidden">Назад</span>        <svg class="control__icon">          <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>        </svg>      </button>      <p class="control__text">Листайте, чтобы увидеть ещё больше примеров</p>      <button class="control__btn control__btn--next" data-target="slider.next">        <span class="visually-hidden">Вперед</span>        <svg class="control__icon control__icon--next">          <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>        </svg>      </button>    </div>  </section>  <section id="price" class="price">    <div class="price__box">      <h2 class="price__title title">Стоимость моей проработки <span>вашей рекламной кампании</span></h2>      <div class="price__wrapper border-wrap border-wrap--price">        <p class="border-wrap__text border-wrap__text--price"><span><b>Повышайте прибыльность</b> своего бизнеса</span>        </p>      </div>    </div>    <ul class="price__list">      <li class="price__item card-price">        <div class="price__inner card-price__wrap">          <div class="card-price__container">            <p class="card-price__name">Настройка <b>Яндекс.Директ</b></p>            <ul class="card-price__list">              <li class="card-price__item">Анализ конкурентов</li>              <li class="card-price__item">Сбор полного семантического ядра</li>              <li class="card-price__item">Минусация ключевых слов</li>              <li class="card-price__item">Кампания для поиска</li>              <li class="card-price__item">Кампании для РСЯ по группам <br> (тест изображений)</li>              <li class="card-price__item">Ретаргетинг</li>              <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>              <li class="card-price__item">Настройка целей</li>              <li class="card-price__item">Автоматизация ставок</li>              <li class="card-price__item">Рекомендации по сайту</li>            </ul>            <div class="card-price__box">              <p class="card-price__text card-price__text--icon"><span><b>Время настройки:</b> от 5 дн</span></p>              <p class="card-price__text"><b>+ 2 недели </b> ведения</p>            </div>            <div class="card-price__cost">14 990₽</div>          </div>        </div>        <a href="javascript://" class="card-price__button contact-me get-popup" data-popup="yandex">          <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Яндекс.Директ</b></p>          <div class="contact-me__button contact-me__button--price">            <svg class="contact-me__icon" width="48" height="48">              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>            </svg>          </div>        </a>      </li>      <li class="price__item card-price">        <div class="price__inner card-price__wrap">          <div class="card-price__container">            <p class="card-price__name">Настройка <br> <b>Google Ads</b></p>            <ul class="card-price__list">              <li class="card-price__item">Анализ конкурентов</li>              <li class="card-price__item">Сбор полного семантического ядра</li>              <li class="card-price__item">Минусация ключевых слов</li>              <li class="card-price__item">Кампания для поиска</li>              <li class="card-price__item">Кампании для КМС по группам (тест изображений)</li>              <li class="card-price__item">Ретаргетинг</li>              <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>              <li class="card-price__item">Настройка целей</li>              <li class="card-price__item">Автоматизация ставок</li>              <li class="card-price__item">Рекомендации по сайту</li>            </ul>            <div class="card-price__box">              <p class="card-price__text card-price__text--icon"><b>Время настройки:</b> от 5 дн</p>              <p class="card-price__text"><b>+ 2 недели</b> ведения</p>            </div>            <div class="card-price__cost">14 990 ₽</div>          </div>        </div>        <a href="javascript://" class="card-price__button contact-me get-popup" data-popup="google">          <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Google Ads</b></p>          <div class="contact-me__button contact-me__button--price">            <svg class="contact-me__icon" width="48" height="48">              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>            </svg>          </div>        </a>      </li>      <li class="price__item price__item card-price">        <div class="price__inner price__inner--main card-price__wrap">          <div class="card-price__container card-price__container--main">            <p class="card-price__name">Ведение рекламы <b>Яндекс.Директ или Google Ads</b></p>            <ul class="card-price__list">              <li class="card-price__item">Контроль ставок по фразам</li>              <li class="card-price__item">Минусация нецелевых запросов</li>              <li class="card-price__item">Отключение неэффективных фраз</li>              <li class="card-price__item">A/B тесты заголовков, текстов <br> и картинок</li>              <li class="card-price__item">Корректировки по полу, <br> возрасту, времени, сегменту</li>              <li class="card-price__item">Чистка некачественных <br> площадок РСЯ</li>              <li class="card-price__item">Добавление объявлений с новыми ключевыми запросами</li>              <li class="card-price__item">Отчетность каждый понедельник, и по вашему запросу</li>            </ul>            <div class="card-price__box card-price__box--main">              <p class="card-price__text card-price__text--icon"><span><b>Ведение рекламы:</b>  30 дн</span></p>              <p class="card-price__text">Техническая поддержка <b>ежедневно<br> </b> с <b>9:00</b> до <b>20:00</b></p>            </div>            <div class="card-price__cost">от 9990 ₽</div>          </div>        </div>        <a href="javascript://" class="card-price__button card-price__button--main contact-me get-popup" data-popup="all">          <p class="contact-me__text">Мне нужно <b>Ведение рекламы</b></p>          <div class="contact-me__button contact-me__button--dark contact-me__button--price">            <svg class="contact-me__icon" width="48" height="48">              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>            </svg>          </div>        </a>      </li>    </ul>  </section>  <section id="reviews" class="appreciation">    <div class="appreciation__container" data-controller="slider-count">      <div class="appreciation__list">        <div class="" data-target="slider-count.list">        <div class="appreciation__item">          <div class="appreciation__wrap">            <div class="appreciation__inner">              <h2 class="appreciation__title title">Довольные клиенты </h2>              <p class="appreciation__desc">о сотрудничестве со мной:</p>              <div class="appreciation__box">                <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>                <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность,                  <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>                  Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о                  профессионализме Брезгунова Кирилла Владимировича.</p>              </div>            </div>            <div class="appreciation__wrapper">              <div class="appreciation__image">                <picture><source srcset="img/appreciation__inventra.webp" type="image/webp"><img class="appreciation__img" src="img/appreciation__inventra.png" alt=""></picture>              </div>              <a data-fancybox class="appreciation__link" href="img/appreciation__inventra.png">                <svg class="appreciation__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>                </svg>                <p>Смотреть скан отзыва</p>              </a>            </div>          </div>        </div>        <div class="appreciation__item">          <div class="appreciation__wrap">            <div class="appreciation__inner">              <h2 class="appreciation__title title">Довольные клиенты </h2>              <p class="appreciation__desc">о сотрудничестве со мной:</p>              <div class="appreciation__box">                <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>                <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность,                  <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>                  Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о                  профессионализме Брезгунова Кирилла Владимировича.</p>              </div>            </div>            <div class="appreciation__wrapper">              <div class="appreciation__image">                <picture><source srcset="img/appreciation__inventra.webp" type="image/webp"><img class="appreciation__img" src="img/appreciation__inventra.png" alt=""></picture>              </div>              <a data-fancybox class="appreciation__link" href="img/appreciation__inventra.png">                <svg class="appreciation__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>                </svg>                <p>Смотреть скан отзыва</p>              </a>            </div>          </div>        </div>        <div class="appreciation__item">          <div class="appreciation__wrap">            <div class="appreciation__inner">              <h2 class="appreciation__title title">Довольные клиенты </h2>              <p class="appreciation__desc">о сотрудничестве со мной:</p>              <div class="appreciation__box">                <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>                <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность,                  <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b>                  Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о                  профессионализме Брезгунова Кирилла Владимировича.</p>              </div>            </div>            <div class="appreciation__wrapper">              <div class="appreciation__image">                <picture><source srcset="img/appreciation__inventra.webp" type="image/webp"><img class="appreciation__img" src="img/appreciation__inventra.png" alt=""></picture>              </div>              <a data-fancybox class="appreciation__link" href="img/appreciation__inventra.png">                <svg class="appreciation__icon">                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>                </svg>                <p>Смотреть скан отзыва</p>              </a>            </div>          </div>        </div>      </div>      </div>      <div class="appreciation__control control">        <button class="control__btn control__btn--back" data-target="slider-count.prev">          <span class="visually-hidden">Назад</span>          <svg class="control__icon">            <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>          </svg>        </button>        <p class="control__text"><span class="control__number control__number--1" data-target="slider-count.current">1</span> <span          class="control__number control__number--3">/ <b data-target="slider-count.length">1</b> </span></p>        <button class="control__btn control__btn--next" data-target="slider-count.next">          <span class="visually-hidden">Вперед</span>          <svg class="control__icon control__icon--next">            <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>          </svg>        </button>      </div>    </div>  </section>  <section id="free" class="send send--bottom">    <div class="send__container">      <div class="send__box send__box--bottom">        <h2 class="send__title send__title--bottom  title">Бесплатное ведение контекстной рекламы <span>при бюджете от <b>500 000 ₽</b> /мес</span>        </h2>        <p class="send__text send__text--bottom">Оставьте свой номер телефона, и <b>в ближайшее время я свяжусь с вами</b>          для обсуждения деталей работы</p>        <form class="send__form">          <input type="hidden" name="project_name" value="brezgunov">          <input type="hidden" name="admin_email" value="info@prikhodkin.com">          <input type="hidden" name="form_subject" value="Бесплатное ведение | brezgunov">          <div class="send__inner">            <input class="send__tel" type="tel" name="tel" id="form-tel1" data-tel required placeholder="+7 (___) ___-__-__">            <button class="send__button contact-me contact-me--bottom">              <span class="contact-me__text contact-me__text--bottom">Оформить бесплатное ведение</span>              <span class="contact-me__button">                <svg class="contact-me__icon" width="48" height="48">                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>                </svg>              </span>            </button>          </div>          <div class="send__checkbox send__checkbox--bottom personal-data">            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-bottom" checked>            <label class="personal-data__label" for="personal-data__check-bottom">               <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>            </label>          </div>        </form>      </div>      <div class="send__image send__image--bottom">        <picture>          <source media="(min-width: 1200px)" type="image/webp" srcset="img/send__bottom-desktop.webp">          <source media="(min-width: 1200px)" srcset="img/send__bottom-desktop.png">          <source type="image/webp" srcset="img/send__bottom-mobile.webp">          <img class="send__img send__img--bottom" src="img/send__bottom-mobile.png" alt="">        </picture>      </div>    </div>  </section></main><footer class="footer">  <div class="footer__box">    <p class="footer__name">Кирилл Брезгунов</p>    <p class="footer__desc">Специалист по настройке контекстной рекламы</p>  </div>  <div class="footer__contacts contacts">    <div class="contacts__box">      <a class="contacts__email contacts__email--footer" href="mailto:kirill@brezgunov.pro"><b>E-mail:</b> kirill@brezgunov.pro</a>      <a class="contacts__tel contacts__tel--footer" href="tel:+79056960800"><b>Телефон:</b> +7 (905) 696-08-00</a>    </div>    <div class="contacts__socials contacts__socials--footer socials">      <div class="socials__wrap socials__wrap--footer">        <p class="socials__text socials__text--footer">Написать мне:</p>        <ul class="socials__list socials__list--footer">          <li class="socials__item">            <a class="socials__link socials__link--viber" href="viber://chat?number=%2B79056960800">              <svg class="socials__icon">                <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>              </svg>            </a>          </li>          <li class="socials__item">            <a class="socials__link socials__link--telegram" href="https://t.me/brezgunov">              <svg class="socials__icon">                <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>              </svg>            </a>          </li>          <li class="socials__item">            <a class="socials__link socials__link--whatsapp" href="https://wa.me/79056960800">              <svg class="socials__icon">                <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>              </svg>            </a>          </li>        </ul>      </div>    </div>  </div>  <a class="footer__copyright" href="privacy.html">Политика кофиденциальности</a></footer><section class="modal popup" data-popup="callback">  <div class="popup__wrapper">    <div class="modal__container ">    <div class="modal__wrapper send send--modal">      <div class="send__box send__box--modal">        <h2 class="send__title send__title--modal title"><span>кирилл брезгунов</span>  связаться со мной </h2>        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>      </div>      <form class="send__form send__form--modal">        <input type="hidden" name="project_name" value="brezgunov">        <input type="hidden" name="admin_email" value="info@prikhodkin.com">        <input type="hidden" name="form_subject" value="Обратная связь | brezgunov">        <div class="send__inner send__inner--modal">          <input class="send__tel" type="tel" name="tel" data-tel placeholder="+7 (___) ___-__-__">          <button class="send__button contact-me">            <span class="contact-me__text">Связаться со мной</span>            <span class="contact-me__button">              <svg class="contact-me__icon" width="48" height="48">                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>              </svg>            </span>          </button>        </div>        <div class="send__checkbox personal-data">          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-callback" checked>          <label class="personal-data__label" for="personal-data__check-callback">            <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>          </label>        </div>      </form>    </div>    <button class="modal__close close popup__close">      <span class="visually-hidden">Закрыть</span>      <svg class="close__icon" width="12" height="12">        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>      </svg>    </button>  </div>  </div></section><section class="modal popup" data-popup="yandex">  <div class="popup__wrapper">    <div class="modal__container">    <div class="modal__wrapper send send--modal">      <div class="send__box send__box--modal">        <h2 class="send__title send__title--modal title"><span>настройка</span>   яндекс.директ </h2>        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>      </div>      <form class="send__form send__form--modal">        <input type="hidden" name="project_name" value="brezgunov">        <input type="hidden" name="admin_email" value="info@prikhodkin.com">        <input type="hidden" name="form_subject" value="Яндекс | brezgunov">        <div class="send__inner send__inner--modal">          <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">          <button class="send__button contact-me">            <span class="contact-me__text">Связаться со мной</span>            <span class="contact-me__button">              <svg class="contact-me__icon" width="48" height="48">                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>              </svg>            </span>          </button>        </div>        <div class="send__checkbox personal-data">          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-yandex" checked>          <label class="personal-data__label" for="personal-data__check-yandex">            <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>          </label>        </div>      </form>    </div>    <button class="modal__close popup__close close">      <span class="visually-hidden">Закрыть</span>      <svg class="close__icon" width="12" height="12">        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>      </svg>    </button>  </div>  </div></section><section class="modal popup" data-popup="google">  <div class="popup__wrapper">    <div class="modal__container">    <div class="modal__wrapper send send--modal">      <div class="send__box send__box--modal">        <h2 class="send__title send__title--modal title"><span>настройка</span>   google ads </h2>        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>      </div>      <form class="send__form send__form--modal">        <input type="hidden" name="project_name" value="brezgunov">        <input type="hidden" name="admin_email" value="info@prikhodkin.com">        <input type="hidden" name="form_subject" value="Google | brezgunov">        <div class="send__inner send__inner--modal">          <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">          <button class="send__button contact-me">            <span class="contact-me__text">Связаться со мной</span>            <span class="contact-me__button">              <svg class="contact-me__icon" width="48" height="48">                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>              </svg>            </span>          </button>        </div>        <div class="send__checkbox personal-data">          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-google" checked>          <label class="personal-data__label" for="personal-data__check-google">            <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>          </label>        </div>      </form>    </div>    <button class="modal__close popup__close close">      <span class="visually-hidden">Закрыть</span>      <svg class="close__icon" width="12" height="12">        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>      </svg>    </button>  </div>  </div></section><section class="modal popup" data-popup="all">  <div class="popup__wrapper">    <div class="modal__container">    <div class="modal__wrapper send send--modal">      <div class="send__box send__box--modal">        <h2 class="send__title send__title--modal title"><span>Ведение рекламы</span></h2>        <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>      </div>      <form class="send__form send__form--modal">        <input type="hidden" name="project_name" value="brezgunov">        <input type="hidden" name="admin_email" value="info@prikhodkin.com">        <input type="hidden" name="form_subject" value="Ведение | brezgunov">        <div class="send__inner send__inner--modal">          <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">          <button class="send__button contact-me">            <span class="contact-me__text">Связаться со мной</span>            <span class="contact-me__button">              <svg class="contact-me__icon" width="48" height="48">                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>              </svg>            </span>          </button>        </div>        <div class="send__checkbox personal-data">          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-all" checked>          <label class="personal-data__label" for="personal-data__check-all">            <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>          </label>        </div>      </form>    </div>    <button class="modal__close popup__close close">      <span class="visually-hidden">Закрыть</span>      <svg class="close__icon" width="12" height="12">        <use xlink:href="img/sprites/sprite.svg#icon__close"></use>      </svg>    </button>  </div>  </div></section><script src="js/vendor.min.js"></script><script src="js/general.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script type="text/javascript">(function(window,document,n,project_ids){window.GudokData=n;if(typeof project_ids !== "object"){project_ids = [project_ids]};window[n] = {};window[n]["projects"]=project_ids;config_load(project_ids.join(','));function config_load(cId){var a=document.getElementsByTagName("script")[0],s=document.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},cMrs='';s.type="text/javascript";s.async=true;if(document.location.search&&document.location.search.indexOf('?gudok_check=')===0)cMrs+=document.location.search.replace('?','&');s.src="//mod.gudok.tel/script.js?sid="+cId+cMrs;if(window.opera == "[object Opera]"){document.addEventListener("DOMContentLoaded", i, false)}else{i()}}})(window, document, "gd", "fp8tqrw4p5");</script>  <meta charset="UTF-8">
+  <title>НАДЁЖНЫЙ СПЕЦИАЛИСТ ПО КОНТЕКСТНОЙ РЕКЛАМЕ</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png" data-mce-href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png" data-mce-href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png" data-mce-href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png" data-mce-href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png" data-mce-href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png" data-mce-href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png" data-mce-href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png" data-mce-href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png" data-mce-href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32" data-mce-href="/favicon-32x32.png">
+<link rel="icon" type="image/png" href="img/favicons/android-chrome-192x192.png" sizes="192x192" data-mce-href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-96x96.png" sizes="96x96" data-mce-href="/favicon-96x96.png">
+<link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16" data-mce-href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="img/favicons//mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="preload" href="fonts/Raleway-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Raleway-Black.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/SegoeUI-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/SegoeUI-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/SegoeUI-SemiBold.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(54205777, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/54205777" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter → -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148823203-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-148823203-1');
+  </script>
+
+  <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?168",t.onload=function(){VK.Retargeting.Init("VK-RTRG-529149-5cUMo"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-529149-5cUMo" style="position:fixed; left:-999px;" alt=""/></noscript>
+
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '367503247624630');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+                 src="https://www.facebook.com/tr?id=367503247624630&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+
+
+</head>
+  <body class="page">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__box">
+        <div class="header__inner">
+          <button class="burger header__toggle">
+            <span class="burger__button">Открыть меню</span>
+          </button>
+          <p class="header__text">Меню</p>
+        </div>
+        <nav class="header__nav header__nav--closed navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <ul class="navigation__sublist">
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#adv">Преимущества</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#sert">Сертификаты</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#case">Кейсы</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#price">Стоимость</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--top">
+                  <a class="navigation__link navigation__link--top" href="#reviews">Отзывы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navigation__item">
+              <ul class="navigation__sublist navigation__sublist--bottom">
+                <li class="navigation__subitem navigation__subitem--bottom">
+                  <a class="navigation__link navigation__link--bottom" href="#audit">Получить аудит</a>
+                </li>
+                <li class="navigation__subitem navigation__subitem--bottom">
+                  <a class="navigation__link navigation__link--bottom" href="#free">Бесплатное ведение </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="navigation__close close">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="close__icon" width="12" height="12">
+              <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <div class="header__contacts contacts">
+        <a class="contacts__tel" href="tel:+79056960800">+7 (905)-696-08-00</b></a>
+        <a class="contacts__email--header" href="mailto:kirill@brezgunov.pro">kirill@brezgunov.pro</a>
+        <div class="contacts__socials contacts__socials--header socials">
+          <div class="socials__wrap">
+            <p class="socials__text">Написать мне в:</p>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a onclick="gtag('event', 'Viber',{'event_category':'getApp', 'event_action': 'Viber'}); ym(54205777, 'reachGoal', 'getAppViber'); return true; " class="socials__link socials__link--viber" href="viber://chat?number=%2B79056960800">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a onclick="gtag('event', 'Telegram',{'event_category':'getApp', 'event_action': 'Telegram'}); ym(54205777, 'reachGoal', 'getAppTelegram'); return true; " class="socials__link socials__link--telegram" href="https://t.me/brezgunov">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a onclick="gtag('event', 'WhatsApp',{'event_category':'getApp', 'event_action': 'WhatsApp'}); ym(54205777, 'reachGoal', 'getAppWhatsApp'); return true; " class="socials__link socials__link--whatsapp" href="https://wa.me/79056960800">
+                  <svg class="socials__icon">
+                    <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <main class="main">
+  <h1 class="visually-hidden">Кирилл Брезгунов, контекстная реклама</h1>
+  <section class="promo">
+    <div class="promo__container">
+      <div class="promo__wrap promo__wrap--top">
+        <h2 class="promo__title title"><span>Надёжный специалист</span> по <br> контекстной рекламе </h2>
+        <p class="promo__text">Общайтесь напрямую с исполнителем и <b>оперативно повышайте прибыль</b> своего бизнеса</p>
+
+        <a  href="javascript://" class="promo__button contact-me get-popup" data-popup="callback">
+          <p class="contact-me__text">Связаться со мной</p>
+          <div class="contact-me__button" >
+            <svg class="contact-me__icon" width="48" height="48">
+              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+      <div class="promo__wrap promo__wrap--bottom">
+        <div class="promo__image">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/photo-Kirill@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/photo-Kirill@desktop.png">
+            <source type="image/webp" srcset="img/photo-Kirill@mobile.webp">
+            <img class="promo__img" src="img/photo-Kirill@mobile.png" alt="Фотография Кирилла Брезгунова">
+          </picture>
+        </div>
+        <div class="promo__box">
+          <p class="promo__name">Кирилл Брезгунов</p>
+          <p class="promo__desc">Специалист по настройке контекстной рекламы</p>
+        </div>
+      </div>
+      <div class="promo__socials socials">
+        <div class="socials__wrap">
+          <p class="socials__text">Написать мне в:</p>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a onclick="gtag('event', 'Viber',{'event_category':'getApp', 'event_action': 'Viber'}); ym(54205777, 'reachGoal', 'getAppViber'); return true; " class="socials__link socials__link--viber" href="viber://chat?number=%2B79056960800">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a onclick="gtag('event', 'Telegram',{'event_category':'getApp', 'event_action': 'Telegram'}); ym(54205777, 'reachGoal', 'getAppTelegram'); return true; " class="socials__link socials__link--telegram" href="https://t.me/brezgunov">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a onclick="gtag('event', 'WhatsApp',{'event_category':'getApp', 'event_action': 'WhatsApp'}); ym(54205777, 'reachGoal', 'getAppWhatsApp'); return true; " class="socials__link socials__link--whatsapp" href="https://wa.me/79056960800">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="adv" class="advantages">
+    <ul class="advantages__items">
+      <li class="advantages__element advantages__element--1"><p><b>Сэкономлю</b><br> ваш бюджет</p></li>
+      <li class="advantages__element advantages__element--2"><p><b>Оптимизирую</b> рекламную кампанию</p></li>
+      <li class="advantages__element advantages__element--3"><p>Снижу <b>стоимость обращения</b> клиента</p></li>
+      <li class="advantages__element advantages__element--4"><p><b>Повышу количество</b> заявок и звонков</p></li>
+    </ul>
+    <div class="advantages__wrap">
+      <div class="advantages__box">
+        <h2 class="advantages__title title">Почему со мной удобно работать</h2>
+        <div class="advantages__wrapper border-wrap">
+          <p class="border-wrap__text border-wrap__text--advantages"><span><b>Лично</b> отвечаю за качество своих услуг</span>
+          </p>
+        </div>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--1">
+          <div class="advantages__inner ">
+            <p class="advantages__number">01</p>
+            <p class="advantages__name">Заключаю договор</p>
+          </div>
+          <p class="advantages__desc">Я <b>официально</b> зарегистрирован как самозанятый. Заключу с вами договор, в котором
+            прописаны <b>все сроки и условия</b>, а также предоставлю весь набор необходимой документации</p>
+        </li>
+        <li class="advantages__item advantages__item--2">
+          <div class="advantages__inner">
+            <p class="advantages__number">02</p>
+            <p class="advantages__name">Всегда на связи</p>
+          </div>
+          <p class="advantages__desc">Постоянно онлайн в соц. сетях и <br> мессенджерах, до меня <b>легко достучаться,</b>
+            непрерывно <b>держу вас в курсе</b>  состояния рекламной кампании</p>
+        </li>
+        <li class="advantages__item advantages__item--3">
+          <div class="advantages__inner">
+            <p class="advantages__number">03</p>
+            <p class="advantages__name">Подготавливаю отчётность</p>
+          </div>
+          <p class="advantages__desc"><b>Каждый понедельник</b> высылаю вам отчет по рекламе, составляю <b>глобальный отчет </b>1 раз
+            в месяц и <b>по вашему запросу</b></p>
+        </li>
+        <li class="advantages__item advantages__item--4">
+          <div class="advantages__inner">
+            <p class="advantages__number">04</p>
+            <p class="advantages__name">Максимально <br> прозрачен в работе</p>
+          </div>
+          <p class="advantages__desc">Вы получаете доступ <b>во все рекламные кабинеты</b> и можете следить за процессом.
+            Разрабатываю план и стратегию на месяц, согласовывая с вами</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section id="audit" class="send send--top">
+    <div class="send__box">
+      <h2 class="send__title title">Недовольны своим подрядчиком <span>по контекстной рекламе?</span></h2>
+      <p class="send__text"><b>Проведу подробный аудит по его работе</b> и предоставлю список всех ошибок и предложений
+        по улучшению рекламы</p>
+      <form class="send__form form-audit" onsubmit="gtag('event', 'ContactMe',{'event_category':'getApp', 'event_action': 'ContactMe'}); ym(54205777, 'reachGoal', 'getAppContactMe'); return true; ">
+        <input type="hidden" name="project_name" value="brezgunov">
+        <input type="hidden" name="admin_email" value="kirill@brezgunov.pro,info@prikhodkin.com">
+        <input type="hidden" name="form_subject" value="Аудит | brezgunov">
+        <div class="send__inner">
+          <input data-tel class="send__tel" type="tel" name="tel" id="form-tel" required placeholder="+7 (___) ___-__-__">
+          <button class="send__button contact-me">
+            <span class="contact-me__text">Связаться со мной</span>
+            <span class="contact-me__button">
+              <svg class="contact-me__icon" width="48" height="48">
+                <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="send__checkbox personal-data">
+          <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check" checked>
+          <label class="personal-data__label" for="personal-data__check">
+            <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="send__image">
+      <picture>
+        <source media="(min-width: 1200px)" type="image/webp" srcset="img/send__top-desktop.webp">
+        <source media="(min-width: 1200px)" srcset="img/send__top-desktop.png">
+        <source type="image/webp" srcset="img/send__top-mobile.webp">
+        <img class="send__img" src="img/send__top-mobile.png" alt="">
+      </picture>
+    </div>
+  </section>
+  <section class="customers">
+    <h2 class="visually-hidden">Этапы привлечения клиентов</h2>
+    <div class="customers__box">
+      <div class="customers__inner">
+        <div class="customers__title title">Как я привожу клиентов в ваш бизнес</div>
+        <p class="customers__desc">Порядок работ во время нашего сотрудничества</p>
+      </div>
+      <div class="customers__wrapper border-wrap border-wrap--customers">
+        <p class="border-wrap__text border-wrap__text--customers">
+          <span>Окупаемость рекламных кампаний <b>всегда ясна</b> </span></p>
+      </div>
+    </div>
+    <ul class="customers__list" data-controller="show">
+      <li class="customers__item" data-target="show.item">
+        <p class="customers__number">01</p>
+        <p class="customers__text"><b>Подробно</b> анализирую нишу ваших услуг</p>
+      </li>
+      <li class="customers__item" data-target="show.item">
+        <p class="customers__number">02</p>
+        <p class="customers__text">Подбираю <b>подходящие</b> инструменты для работы <br> именно с вашей рекламной
+          кампанией</p>
+      </li>
+      <li class="customers__item" data-target="show.item">
+        <p class="customers__number">03</p>
+        <p class="customers__text">Согласовываю с вами список ключевых слов <br> и объявления <b>для каждого из них</b>
+        </p>
+      </li>
+      <li class="customers__item" data-target="show.item">
+        <p class="customers__number">04</p>
+        <p class="customers__text">Подготавливаю рекламную кампанию и запускаю в работу</p>
+      </li>
+      <li class="customers__item" data-target="show.item">
+        <p class="customers__number">05</p>
+        <p class="customers__text">Анализирую результаты <b>каждый день</b></p>
+      </li>
+      <li class="customers__item" data-target="show.item">
+        <p class="customers__number">06</p>
+        <p class="customers__text">Улучшаю рекламную кампанию и<b> повышаю вашу прибыль</b></p>
+      </li>
+      <li class="customers__item" data-target="show.item">
+        <p class="customers__number">07</p>
+        <p class="customers__text">В конце месяца составляю отчёт о распределении <br> бюджета и <b>достигнутых
+          показателях</b></p>
+      </li>
+    </ul>
+    <ul class="customers__list-bottom">
+      <li class="customers__item-bottom customers__item-bottom--1">Даю рекомендации по дальнейшей стратегии</li>
+      <li class="customers__item-bottom customers__item-bottom--2">Согласовываем план на следующий месяц</li>
+    </ul>
+  </section>
+  <section id="sert" class="certificates">
+    <div class="certificates__box">
+      <div class="certificates__inner">
+        <h2 class="certificates__title title">Сертифицированный специалист по рекламе в Яндекс и Google</h2>
+        <p class="certificates__desc">Посмотрите на официальное подтверждение моих навыков</p>
+      </div>
+      <div class="certificates__wrap certificate">
+        <div class="certificate__box">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__google@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/certificate__google@desktop.png">
+            <source type="image/webp" srcset="img/certificate__google@mobile.webp">
+            <img class="certificate__img" src="img/certificate__google@mobile.png" alt="Сертификат Google">
+          </picture>
+        </div>
+        <p class="certificate__text">Сертификация Google Рекламы по проведению поисковых кампаний Google</p>
+      </div>
+    </div>
+    <ul class="certificates__list">
+      <li class="certificates__item certificate">
+        <div class="certificate__box">
+          <picture>
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__google-analytics@desktop.webp">
+            <source media="(min-width: 1200px)" srcset="img/certificate__google-analytics@desktop.png">
+            <source type="image/webp" srcset="img/certificate__google-analytics@mobile.webp">
+            <img class="certificate__img" src="img/certificate__google-analytics@mobile.png"
+                 alt="Сертификат Google analytics">
+          </picture>
+
+      </div>
+      <p class="certificate__text">Google Analytics Individual <br> Qualification Google</p>
+    </li>
+    <li class="certificates__item certificate">
+      <div class="certificate__box">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__yandex@desktop.webp">
+          <source media="(min-width: 1200px)" srcset="img/certificate__yandex@desktop.png">
+          <source type="image/webp" srcset="img/certificate__yandex@mobile.webp">
+          <img class="certificate__img" src="img/certificate__yandex@mobile.png" alt="Сертификат Google">
+        </picture>
+      </div>
+      <p class="certificate__text">Сертификат Яндекс Директ <br> с прокторингом</p>
+    </li>
+    <li class="certificates__item certificate">
+      <div class="certificate__box">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="img/certificate__yandex-metrica@desktop.webp">
+          <source media="(min-width: 1200px)" srcset="img/certificate__yandex-metrica@desktop.png">
+          <source type="image/webp" srcset="img/certificate__yandex-metrica@mobile.webp">
+          <img class="certificate__img" src="img/certificate__yandex-metrica@mobile.png" alt="Сертификат Google">
+        </picture>
+      </div>
+      <p class="certificate__text">Сертификат Яндекс Метрика</p>
+    </li>
+  </ul>
+</section>
+  <section id="case" class="examples" data-controller="slider">
+    <div class="examples__box">
+      <div class="examples__inner">
+        <h2 class="examples__title title">Примеры выполненных мною работ</h2>
+        <p class="examples__desc">Несколько самых прибыльных кейсов</p>
+      </div>
+      <div class="examples__wrapper border-wrap border-wrap--examples">
+        <p class="border-wrap__text border-wrap__text--examples"><span><b>Сэкономлю до 50%</b> от бюджета на рекламу</span></p>
+      </div>
+    </div>
+    <div class="examples__slider" >
+      <div data-target="slider.list">
+        <div>
+          <div class="examples__wrap">
+          <div class="examples__tasks">
+            <div class="examples__container">
+              <p class="examples__number">01</p>
+              <p class="examples__subtitle"><span>«</span>Технология уюта и комфорта <span>»</span></p>
+            </div>
+            <p class="examples__description">Производство пластиковых окон, натяжных потолков, жалюзи</p>
+            <ul class="examples__list">
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-top">Задачи по проекту:</p>
+                <p class="examples__text">Увеличение количества клиентов</p>
+              </li>
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-bottom">Было сделано:</p>
+                <p class="examples__text">Настроена контекстная реклама</p>
+              </li>
+            </ul>
+          </div>
+          <div class="examples__result">
+            <p class="examples__name">Фактический результат в цифрах:</p>
+            <p class="examples__text examples__text--result"><b>201</b> заявка в месяц</p>
+            <p class="examples__text examples__text--result"><b>218.88 руб.</b> стоимость привлечения заявки</p>
+          </div>
+          <div class="examples__image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/examples__photo-desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/examples__photo-desktop.jpg">
+              <source type="image/webp" srcset="img/examples__photo.webp">
+              <img class="examples__img" src="img/examples__photo.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+        </div>
+        <div>
+          <div class="examples__wrap">
+          <div class="examples__tasks">
+            <div class="examples__container">
+              <p class="examples__number">02</p>
+              <p class="examples__subtitle"><span>«</span>ЗооАнгелы<span>»</span></p>
+            </div>
+            <p class="examples__description">Сеть ветеринарных клиник</p>
+            <ul class="examples__list">
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-top">Задачи по проекту:</p>
+                <p class="examples__text">Увеличение количества клиентов, уменьшение стоимости заявки</p>
+              </li>
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-bottom">Было сделано:</p>
+                <p class="examples__text">Разработан новый сайт<br>Провели работы по расширению семантики<br>Провели оптимизацию рекламных кампаний</p>
+              </li>
+            </ul>
+          </div>
+          <div class="examples__result">
+            <p class="examples__name">Фактический результат в цифрах:</p>
+            <p class="examples__text examples__text--result"><b>32</b> заявки в месяц (без учета звонков)</p>
+            <p class="examples__text examples__text--result"><b>188,54 руб.</b> стоимость привлечения заявки</p>
+          </div>
+          <div class="examples__image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/examples__photo-zooangels-desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/examples__photo-zooangels-desktop.jpg">
+              <source type="image/webp" srcset="img/examples__photo-zooangels-desktop.webp">
+              <img class="examples__img" src="img/examples__photo-zooangels-desktop.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+        </div>
+
+        <div>
+          <div class="examples__wrap">
+          <div class="examples__tasks">
+            <div class="examples__container">
+              <p class="examples__number">03</p>
+              <p class="examples__subtitle"><span>«</span>Горно-строительная компания”<span>»</span></p>
+            </div>
+            <p class="examples__description">Аренда спецтехники</p>
+            <ul class="examples__list">
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-top">Задачи по проекту:</p>
+                <p class="examples__text">Увеличение количества клиентов, уменьшение стоимости заявки</p>
+              </li>
+              <li class="examples__item">
+                <p class="examples__text examples__text--title examples__text--title-bottom">Было сделано:</p>
+                <p class="examples__text">Настроена контекстная реклама <br> Провели оптимизацию рекламных кампаний</p>
+              </li>
+            </ul>
+          </div>
+          <div class="examples__result">
+            <p class="examples__name">Фактический результат в цифрах:</p>
+            <p class="examples__text examples__text--result"><b>29</b> заявки в месяц</p>
+            <p class="examples__text examples__text--result"><b>286.22 руб. </b> стоимость привлечения заявки</p>
+          </div>
+          <div class="examples__image">
+            <picture>
+              <source media="(min-width: 1200px)" type="image/webp" srcset="img/examples__photo-gsk-desktop.webp">
+              <source media="(min-width: 1200px)" srcset="img/examples__photo-gsk-desktop.jpg">
+              <source type="image/webp" srcset="img/examples__photo-gsk-desktop.webp">
+              <img class="examples__img" src="img/examples__photo-gsk-desktop.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="examples__control control">
+      <button class="control__btn control__btn--back" data-target="slider.prev">
+        <span class="visually-hidden">Назад</span>
+        <svg class="control__icon">
+          <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+        </svg>
+      </button>
+      <p class="control__text">Листайте, чтобы увидеть ещё больше примеров</p>
+      <button class="control__btn control__btn--next" data-target="slider.next">
+        <span class="visually-hidden">Вперед</span>
+        <svg class="control__icon control__icon--next">
+          <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+        </svg>
+      </button>
+    </div>
+  </section>
+  <section id="price" class="price">
+    <div class="price__box">
+      <h2 class="price__title title">Стоимость моей проработки <span>вашей рекламной кампании</span></h2>
+      <div class="price__wrapper border-wrap border-wrap--price">
+        <p class="border-wrap__text border-wrap__text--price"><span><b>Повышайте прибыльность</b> своего бизнеса</span>
+        </p>
+      </div>
+    </div>
+    <ul class="price__list">
+      <li class="price__item card-price">
+        <div class="price__inner card-price__wrap">
+          <div class="card-price__container">
+            <p class="card-price__name">Настройка <b>Яндекс.Директ</b></p>
+            <ul class="card-price__list">
+              <li class="card-price__item">Анализ конкурентов</li>
+              <li class="card-price__item">Сбор полного семантического ядра</li>
+              <li class="card-price__item">Минусация ключевых слов</li>
+              <li class="card-price__item">Кампания для поиска</li>
+              <li class="card-price__item">Кампании для РСЯ по группам <br> (тест изображений)</li>
+              <li class="card-price__item">Ретаргетинг</li>
+              <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>
+              <li class="card-price__item">Настройка целей</li>
+              <li class="card-price__item">Автоматизация ставок</li>
+              <li class="card-price__item">Рекомендации по сайту</li>
+            </ul>
+            <div class="card-price__box">
+              <p class="card-price__text card-price__text--icon"><span><b>Время настройки:</b> от 5 дн</span></p>
+              <p class="card-price__text"><b>+ 2 недели </b> ведения</p>
+            </div>
+            <div class="card-price__cost">14 990₽</div>
+          </div>
+        </div>
+        <a href="javascript://" class="card-price__button contact-me get-popup" data-popup="yandex">
+          <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Яндекс.Директ</b></p>
+          <div class="contact-me__button contact-me__button--price">
+            <svg class="contact-me__icon" width="48" height="48">
+              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="price__item card-price">
+        <div class="price__inner card-price__wrap">
+          <div class="card-price__container">
+            <p class="card-price__name">Настройка <br> <b>Google Ads</b></p>
+            <ul class="card-price__list">
+              <li class="card-price__item">Анализ конкурентов</li>
+              <li class="card-price__item">Сбор полного семантического ядра</li>
+              <li class="card-price__item">Минусация ключевых слов</li>
+              <li class="card-price__item">Кампания для поиска</li>
+              <li class="card-price__item">Кампании для КМС по группам (тест изображений)</li>
+              <li class="card-price__item">Ретаргетинг</li>
+              <li class="card-price__item">Проработка текстов и названий ссылок объявлений</li>
+              <li class="card-price__item">Настройка целей</li>
+              <li class="card-price__item">Автоматизация ставок</li>
+              <li class="card-price__item">Рекомендации по сайту</li>
+            </ul>
+            <div class="card-price__box">
+              <p class="card-price__text card-price__text--icon"><b>Время настройки:</b> от 5 дн</p>
+              <p class="card-price__text"><b>+ 2 недели</b> ведения</p>
+            </div>
+            <div class="card-price__cost">14 990 ₽</div>
+          </div>
+        </div>
+        <a href="javascript://" class="card-price__button contact-me get-popup" data-popup="google">
+          <p class="contact-me__text contact-me__text--price">Мне нужна <br> настройка <b>Google Ads</b></p>
+          <div class="contact-me__button contact-me__button--price">
+            <svg class="contact-me__icon" width="48" height="48">
+              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="price__item price__item card-price">
+        <div class="price__inner price__inner--main card-price__wrap">
+          <div class="card-price__container card-price__container--main">
+            <p class="card-price__name">Ведение рекламы <b>Яндекс.Директ или Google Ads</b></p>
+            <ul class="card-price__list">
+              <li class="card-price__item">Контроль ставок по фразам</li>
+              <li class="card-price__item">Минусация нецелевых запросов</li>
+              <li class="card-price__item">Отключение неэффективных фраз</li>
+              <li class="card-price__item">A/B тесты заголовков, текстов <br> и картинок</li>
+              <li class="card-price__item">Корректировки по полу, <br> возрасту, времени, сегменту</li>
+              <li class="card-price__item">Чистка некачественных <br> площадок РСЯ</li>
+              <li class="card-price__item">Добавление объявлений с новыми ключевыми запросами</li>
+              <li class="card-price__item">Отчетность каждый понедельник, и по вашему запросу</li>
+            </ul>
+            <div class="card-price__box card-price__box--main">
+              <p class="card-price__text card-price__text--icon"><span><b>Ведение рекламы:</b>  30 дн</span></p>
+              <p class="card-price__text">Техническая поддержка <b>ежедневно<br> </b> с <b>9:00</b> до <b>20:00</b></p>
+            </div>
+            <div class="card-price__cost">от 9990 ₽</div>
+          </div>
+        </div>
+        <a href="javascript://" class="card-price__button card-price__button--main contact-me get-popup" data-popup="all">
+          <p class="contact-me__text">Мне нужно <b>Ведение рекламы</b></p>
+          <div class="contact-me__button contact-me__button--dark contact-me__button--price">
+            <svg class="contact-me__icon" width="48" height="48">
+              <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section id="reviews" class="appreciation">
+    <div class="appreciation__container" data-controller="slider-count">
+      <div class="appreciation__list">
+        <div class="" data-target="slider-count.list">
+        <div class="appreciation__item">
+          <div class="appreciation__wrap">
+            <div class="appreciation__inner">
+              <h2 class="appreciation__title title">Довольные клиенты </h2>
+              <p class="appreciation__desc">о сотрудничестве со мной:</p>
+              <div class="appreciation__box">
+                <p class="appreciation__name">ООО <b><span>«</span> Ивента <span>»</span></b></p>
+                <p class="appreciation__text">000 «Ивента», в лице генерального директора Афонина Е.И. выражает благодарность, <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b> Клиенториентированный подход, понимание <br> наших непростых потребностей и задач позволяет судить о профессионализме Брезгунова Кирилла Владимировича.</p>
+              </div>
+            </div>
+            <div class="appreciation__wrapper">
+              <div class="appreciation__image">
+                <img class="appreciation__img" src="img/appreciation__inventra.png" alt="">
+              </div>
+              <a data-fancybox class="appreciation__link" href="img/appreciation__inventra.png">
+                <svg class="appreciation__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+                </svg>
+                <p>Смотреть скан отзыва</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="appreciation__item">
+          <div class="appreciation__wrap">
+            <div class="appreciation__inner">
+              <h2 class="appreciation__title title">Довольные клиенты </h2>
+              <p class="appreciation__desc">о сотрудничестве со мной:</p>
+              <div class="appreciation__box">
+                <p class="appreciation__name">ООО <b><span>«</span> ВАЙТ ЛЕЙБЛ <span>»</span></b></p>
+                <p class="appreciation__text">000 «ВАЙТ ЛЕЙБЛ», в лице генерального директора Сидорцовой Ю.А. выражает благодарность, <br> Интернет-маркетологу Брезгу нову К.В. за <b>качественную настройку <br> «Яндекс Директ».</b> Все задачи были выполнены точно в срок, а что самое главное, реклама стала приносить целевые обращения почти сразу после запуска. Приятно, когда видишь отдачу от каждого вложенного рубля. Кроме этого, Кирилл давал свои рекомендации, и что важно, выполнял работу оперативно. Рада интересному и взаимовыгодному сотрудничеству. </p>
+              </div>
+            </div>
+            <div class="appreciation__wrapper">
+              <div class="appreciation__image">
+                <img class="appreciation__img" src="img/appreciation__label.jpg" alt="">
+              </div>
+              <a data-fancybox class="appreciation__link" href="img/appreciation__label.jpg">
+                <svg class="appreciation__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+                </svg>
+                <p>Смотреть скан отзыва</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="appreciation__item">
+          <div class="appreciation__wrap">
+            <div class="appreciation__inner">
+              <h2 class="appreciation__title title">Довольные клиенты </h2>
+              <p class="appreciation__desc">о сотрудничестве со мной:</p>
+              <div class="appreciation__box">
+                <p class="appreciation__name">ООО <b><span>«</span> Русмаркетинг <span>»</span></b></p>
+                <p class="appreciation__text">000 «Русмаркетинг», в лице генерального директора Ильи Егорова выражает благодарность, <br> Интернет-маркетологу Брезгу нову К.В. за <b>сотрудничество по контекстной рекламе Яндекс.Директ и Google Adwords, достижение поставленных результатов.</b> Особенно хочется отметить оперативность и высокую организованность, а также готовность быстро реагировать на поставленные задачи. <br> Рекомендуем Брезгунова К.В. как надежного подрядчика по контекстной рекламе</p>
+              </div>
+            </div>
+            <div class="appreciation__wrapper">
+              <div class="appreciation__image">
+                <img class="appreciation__img" src="img/appreciation__rusmarketing.jpg" alt="">
+              </div>
+              <a data-fancybox class="appreciation__link" href="img/appreciation__rusmarketing.jpg">
+                <svg class="appreciation__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__search"></use>
+                </svg>
+                <p>Смотреть скан отзыва</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="appreciation__control control">
+        <button class="control__btn control__btn--back" data-target="slider-count.prev">
+          <span class="visually-hidden">Назад</span>
+          <svg class="control__icon">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+          </svg>
+        </button>
+        <p class="control__text"><span class="control__number control__number--1" data-target="slider-count.current">1</span> <span
+          class="control__number control__number--3">/ <b data-target="slider-count.length">1</b> </span></p>
+        <button class="control__btn control__btn--next" data-target="slider-count.next">
+          <span class="visually-hidden">Вперед</span>
+          <svg class="control__icon control__icon--next">
+            <use xlink:href="img/sprites/sprite.svg#icon__arrow-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section id="free" class="send send--bottom">
+    <div class="send__container">
+      <div class="send__box send__box--bottom">
+        <h2 class="send__title send__title--bottom  title">Бесплатное ведение контекстной рекламы <span>при бюджете от <b>500 000 ₽</b> /мес</span>
+        </h2>
+        <p class="send__text send__text--bottom">Оставьте свой номер телефона, и <b>в ближайшее время я свяжусь с вами</b>
+          для обсуждения деталей работы</p>
+        <form class="send__form form-free" onsubmit="gtag('event', 'FreeMaintenance',{'event_category':'getApp', 'event_action': 'FreeMaintenance'}); ym(54205777, 'reachGoal', 'getAppFreeMaintenance'); return true; ">
+          <input type="hidden" name="project_name" value="brezgunov">
+          <input type="hidden" name="admin_email" value="kirill@brezgunov.pro,info@prikhodkin.com">
+          <input type="hidden" name="form_subject" value="Бесплатное ведение | brezgunov">
+          <div class="send__inner">
+            <input class="send__tel" type="tel" name="tel" id="form-tel1" data-tel required placeholder="+7 (___) ___-__-__">
+            <button class="send__button contact-me contact-me--bottom">
+              <span class="contact-me__text contact-me__text--bottom">Оформить бесплатное ведение</span>
+              <span class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="send__checkbox send__checkbox--bottom personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-bottom" checked>
+            <label class="personal-data__label" for="personal-data__check-bottom">
+               <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <div class="send__image send__image--bottom">
+        <picture>
+          <source media="(min-width: 1200px)" type="image/webp" srcset="img/send__bottom-desktop.webp">
+          <source media="(min-width: 1200px)" srcset="img/send__bottom-desktop.png">
+          <source type="image/webp" srcset="img/send__bottom-mobile.webp">
+          <img class="send__img send__img--bottom" src="img/send__bottom-mobile.png" alt="">
+        </picture>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer class="footer">
+    <div class="footer__box">
+      <p class="footer__name">Кирилл Брезгунов</p>
+      <p class="footer__desc">Специалист по настройке контекстной рекламы</p>
+    </div>
+    <div class="footer__contacts contacts">
+      <div class="contacts__box">
+        <a class="contacts__email contacts__email--footer" href="mailto:kirill@brezgunov.pro"><b>E-mail:</b> kirill@brezgunov.pro</a>
+        <a class="contacts__tel contacts__tel--footer" href="tel:+79056960800"><b>Телефон:</b> +7 (905)-696-08-00</a>
+      </div>
+      <div class="contacts__socials contacts__socials--footer socials">
+        <div class="socials__wrap socials__wrap--footer">
+          <p class="socials__text socials__text--footer">Написать мне:</p>
+          <ul class="socials__list socials__list--footer">
+            <li class="socials__item">
+              <a onclick="gtag('event', 'Viber',{'event_category':'getApp', 'event_action': 'Viber'}); ym(54205777, 'reachGoal', 'getAppViber'); return true; " class="socials__link socials__link--viber" href="viber://chat?number=%2B79056960800">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__viber"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a onclick="gtag('event', 'Telegram',{'event_category':'getApp', 'event_action': 'Telegram'}); ym(54205777, 'reachGoal', 'getAppTelegram'); return true; " class="socials__link socials__link--telegram" href="https://t.me/brezgunov">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a onclick="gtag('event', 'WhatsApp',{'event_category':'getApp', 'event_action': 'WhatsApp'}); ym(54205777, 'reachGoal', 'getAppWhatsApp'); return true; " class="socials__link socials__link--whatsapp" href="https://wa.me/79056960800">
+                <svg class="socials__icon">
+                  <use xlink:href="img/sprites/sprite.svg#icon__whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <a class="footer__copyright" href="privacy.html">Политика кофиденциальности</a>
+  </footer>
+  <section class="modal popup" data-popup="callback">
+    <div class="popup__wrapper">
+      <div class="modal__container ">
+      <div class="modal__wrapper send send--modal">
+        <div class="send__box send__box--modal">
+          <h2 class="send__title send__title--modal title"><span>кирилл брезгунов</span>  связаться со мной </h2>
+          <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+        </div>
+        <form class="send__form send__form--modal form-callback" onsubmit="gtag('event', 'ContactMe',{'event_category':'getApp', 'event_action': 'ContactMe'}); ym(54205777, 'reachGoal', 'gatAppContactMe'); return true; ">
+          <input type="hidden" name="project_name" value="brezgunov">
+          <input type="hidden" name="admin_email" value="kirill@brezgunov.pro,info@prikhodkin.com">
+          <input type="hidden" name="form_subject" value="Обратная связь | brezgunov">
+          <div class="send__inner send__inner--modal">
+            <input class="send__tel" type="tel" name="tel" data-tel placeholder="+7 (___) ___-__-__">
+            <button class="send__button contact-me">
+              <span class="contact-me__text">Связаться со мной</span>
+              <span class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="send__checkbox personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-callback" checked>
+            <label class="personal-data__label" for="personal-data__check-callback">
+              <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <button class="modal__close close popup__close">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="close__icon" width="12" height="12">
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
+  </section>
+  <section class="modal popup" data-popup="yandex">
+    <div class="popup__wrapper">
+      <div class="modal__container">
+      <div class="modal__wrapper send send--modal">
+        <div class="send__box send__box--modal">
+          <h2 class="send__title send__title--modal title"><span>настройка</span>   яндекс.директ </h2>
+          <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+        </div>
+        <form class="send__form send__form--modal form-tarif" onsubmit="gtag('event', 'Tarif',{'event_category':'getApp', 'event_action': 'Tarif'}); ym(54205777, 'reachGoal', 'getAppTarif'); return true; ">
+          <input type="hidden" name="project_name" value="brezgunov">
+          <input type="hidden" name="admin_email" value="kirill@brezgunov.pro,info@prikhodkin.com">
+          <input type="hidden" name="form_subject" value="Яндекс | brezgunov">
+          <div class="send__inner send__inner--modal">
+            <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">
+            <button class="send__button contact-me">
+              <span class="contact-me__text">Связаться со мной</span>
+              <span class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="send__checkbox personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-yandex" checked>
+            <label class="personal-data__label" for="personal-data__check-yandex">
+              <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <button class="modal__close popup__close close">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="close__icon" width="12" height="12">
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
+  </section>
+  <section class="modal popup" data-popup="google">
+    <div class="popup__wrapper">
+      <div class="modal__container">
+      <div class="modal__wrapper send send--modal">
+        <div class="send__box send__box--modal">
+          <h2 class="send__title send__title--modal title"><span>настройка</span>   google ads </h2>
+          <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+        </div>
+        <form class="send__form send__form--modal form-tarif" onsubmit="gtag('event', 'Tarif',{'event_category':'getApp', 'event_action': 'Tarif'}); ym(54205777, 'reachGoal', 'getAppTarif'); return true; ">
+          <input type="hidden" name="project_name" value="brezgunov">
+          <input type="hidden" name="admin_email" value="kirill@brezgunov.pro,info@prikhodkin.com">
+          <input type="hidden" name="form_subject" value="Google | brezgunov">
+          <div class="send__inner send__inner--modal">
+            <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">
+            <button class="send__button contact-me">
+              <span class="contact-me__text">Связаться со мной</span>
+              <span class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="send__checkbox personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-google" checked>
+            <label class="personal-data__label" for="personal-data__check-google">
+              <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <button class="modal__close popup__close close">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="close__icon" width="12" height="12">
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
+  </section>
+  <section class="modal popup" data-popup="all">
+    <div class="popup__wrapper">
+      <div class="modal__container">
+      <div class="modal__wrapper send send--modal">
+        <div class="send__box send__box--modal">
+          <h2 class="send__title send__title--modal title"><span>Ведение рекламы</span></h2>
+          <p class="send__text send__text--modal">Оставьте свои контакты, и я перезвоню вам <b>в ближайшее время</b> </p>
+        </div>
+        <form class="send__form send__form--modal form-tarif" onsubmit="gtag('event', 'Tarif',{'event_category':'getApp', 'event_action': 'Tarif'}); ym(54205777, 'reachGoal', 'getAppTarif'); return true; ">
+          <input type="hidden" name="project_name" value="brezgunov">
+          <input type="hidden" name="admin_email" value="kirill@brezgunov.pro,info@prikhodkin.com">
+          <input type="hidden" name="form_subject" value="Ведение | brezgunov">
+          <div class="send__inner send__inner--modal">
+            <input class="send__tel" type="tel" name="tel" required data-tel placeholder="+7 (___) ___-__-__">
+            <button class="send__button contact-me">
+              <span class="contact-me__text">Связаться со мной</span>
+              <span class="contact-me__button">
+                <svg class="contact-me__icon" width="48" height="48">
+                  <use xlink:href="img/sprites/sprite.svg#icon__phone"></use>
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="send__checkbox personal-data">
+            <input class="visually-hidden personal-data__input" type="checkbox" id="personal-data__check-all" checked>
+            <label class="personal-data__label" for="personal-data__check-all">
+              <span>Соглашаюсь с <a href="privacy.html">политикой конфиденциальности</a> </span>
+            </label>
+          </div>
+        </form>
+      </div>
+      <button class="modal__close popup__close close">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="close__icon" width="12" height="12">
+          <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+        </svg>
+      </button>
+    </div>
+    </div>
+  </section>
+  <section class="modal popup callback-thx" data-popup="callback-thx">
+    <div class="popup__wrapper">
+      <div class="modal__container modal__container--accepted">
+        <div class="modal__wrapper modal__wrapper--accepted send send--modal">
+          <div class="send__box send__box--accepted send__box--modal">
+            <h2 class="send__title send__title--modal title">Ваша заявка принята</h2>
+            <p class="send__text send__text--modal send__text--accepted">Я получил ваши данные. Ожидайте звонок <b>в ближайшее время</b> </b>
+            </p>
+          </div>
+        </div>
+        <button class="modal__close close popup__close">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close__icon" width="12" height="12">
+            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="modal popup audit-thx" data-popup="audit-thx">
+    <div class="popup__wrapper">
+      <div class="modal__wrap">
+      <div class="modal__image">
+        <img class="modal__img" src="img/send__top-mobile.png" alt="">
+      </div>
+      <div class="modal__container modal__container--accepted modal__container--accepted-audit">
+        <div class="modal__wrapper modal__wrapper--accepted send send--modal">
+          <div class="send__box send__box--accepted send__box--modal">
+            <h2 class="send__title send__title--modal title"><span>аудит рекламы</span> Ваша заявка принята</h2>
+            <p class="send__text send__text--modal send__text--accepted">Я получил ваши данные. Ожидайте звонок <b>в ближайшее время</b> </b>
+            </p>
+          </div>
+        </div>
+        <button class="modal__close close popup__close">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="close__icon" width="12" height="12">
+            <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="modal popup opened free-thx" data-popup="free-thx">
+    <div class="popup__wrapper">
+      <div class="modal__wrap">
+        <div class="modal__image">
+          <img class="modal__img modal__img--free" src="img/send__bottom-mobile.png" alt="">
+        </div>
+        <div class="modal__container modal__container--accepted modal__container--accepted-audit">
+          <div class="modal__wrapper modal__wrapper--accepted send send--modal">
+            <div class="send__box send__box--accepted send__box--modal">
+              <h2 class="send__title send__title--modal title"><span>бесплатное ведение рекламы</span> Ваша заявка принята</h2>
+              <p class="send__text send__text--modal send__text--accepted">Я получил ваши данные. Ожидайте звонок <b>в ближайшее время</b> </b>
+              </p>
+            </div>
+          </div>
+          <button class="modal__close popup__close close">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="close__icon" width="12" height="12">
+              <use xlink:href="img/sprites/sprite.svg#icon__close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/vendor.js"></script>
+  <script src="js/general.js"></script>
+</body>
+
+</html>
