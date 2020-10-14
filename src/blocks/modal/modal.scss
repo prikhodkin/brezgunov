@@ -77,7 +77,7 @@
     padding: 88px 125px 79px 90px;
 
     &--accepted-audit {
-      padding-right: 82px;
+      padding-right: 30px;
       padding-bottom: 68px;
     }
   }
@@ -98,13 +98,15 @@
     display: block;
     width: 239px;
     min-width: 239px;
-    height: 334px;
+    min-height: 334px;
     overflow: hidden;
+    position: relative;
     background-color: #ffffff;
   }
 
   .modal__img {
     width: 488px;
+    position: absolute;
     object-position: -133px 25px;
 
     &--free {
