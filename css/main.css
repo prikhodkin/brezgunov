@@ -1929,7 +1929,8 @@ a {
       background-size: cover; }
   .promo__container {
     position: relative;
-    padding-left: 25px; }
+    padding-left: 25px;
+    max-height: 891px; }
   .promo__wrap--top {
     position: absolute;
     top: 159px;
